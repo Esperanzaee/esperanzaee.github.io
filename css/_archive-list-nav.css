@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.header-content p {
+  margin: 0.5em 0; }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding: 0em 0em; }
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  /* 保证在小屏时内容垂直居中 */
+  gap: 1em;
+  /* 控制图片与导航之间的间距 */
+  flex-wrap: nowrap;
+  /* 不允许换行 */ }
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  /* 图片与 nav 横向排列 */
+  justify-content: center;
+  /* 图片与 nav 水平居中 */
+  align-items: center;
+  flex: 0 0 auto;
+  /* 不要自动拉伸 */ }
+
+.header-content {
+  flex: 1;
+  /* 占据剩余空间 */
+  min-width: 0;
+  /* 防止溢出 */
+  display: flex;
+  flex-direction: column;
+  gap: 0px; }
+
+.header-img {
+  width: 220px;
+  object-fit: cover;
+  object-position: center;
+  filter: drop-shadow(10px 2px 0px var(--index-shadow));
+  margin: -1em -3em -1em -1em;
+  transition: transform 0.2s ease;
+  animation: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+#nav {
+  position: relative;
+  z-index: 10; }
+
+#nav ul li {
+  padding: 0 0.5rem 0 -1.5em;
+  margin: 0;
+  text-transform: lowercase;
+  font-family: Courier New, cursive; }
+
+#nav ul li a:hover {
+  background-color: var(--mark); }
+
+/* 默认显示 PC 导航，隐藏移动导航 */
+#pc-nav, #list-title-h1 {
+  display: block; }
+
+#mobile-nav {
+  display: none; }
+
+/* 小屏幕时：显示移动版，隐藏 PC 版 */
+@media screen and (max-width: 786px) {
+  .header-img {
+    margin: -1em -2em -1em -1em; }
+  .header-inner {
+    flex-direction: row;
+    /* 保证图片和 nav 在小屏幕时横向排列 */
+    gap: 1em;
+    /* 图片和 nav 之间的间距 */
+    justify-content: center;
+    /* 水平居中 */ }
+  .header-left {
+    flex-direction: row;
+    /* 图片与 nav 横向排列 */
+    justify-content: center;
+    align-items: center; }
+  .header-left img {
+    width: 160px;
+    /* 图片稍微缩小 */ }
+  .header-container {
+    display: flex;
+    justify-content: center;
+    /*padding: 0.5em;*/ }
+  #pc-nav, #list-title-h1 {
+    display: none; }
+  #mobile-nav {
+    display: block; } }

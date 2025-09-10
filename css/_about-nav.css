@@ -1,0 +1,101 @@
+@charset "UTF-8";
+#nav {
+  position: relative;
+  z-index: 10; }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0em; }
+
+.header-content article p {
+  margin: 1.2rem 0; }
+
+.header-content article h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem; }
+
+.header-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0em;
+  flex-wrap: nowrap;
+  /* ✅ 不允许换行 */ }
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  /* ✅ 不要自动拉伸 */ }
+
+.header-content {
+  flex: 1;
+  /* ✅ 占据剩余空间 */
+  min-width: 0;
+  /* ✅ 防止溢出 */ }
+
+.header-img {
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  filter: drop-shadow(10px 2px 0px var(--index-shadow));
+  margin: -1em -1em -1em -1em;
+  transition: transform 0.2s ease;
+  animation: none;
+  /* 禁止选中拖拽 */
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; }
+
+.header-content h1 {
+  filter: drop-shadow(4px 2px 0px var(--index-shadow));
+  letter-spacing: -5px;
+  margin: 0 0 -0.2em -0.5em;
+  font-size: 35px;
+  /*line-height: 1em;*/ }
+
+#nav ul li {
+  padding: 0 0.5rem 0 0;
+  margin: 0;
+  text-transform: lowercase;
+  font-family: Courier New, cursive; }
+
+#nav ul li a:hover {
+  background-color: var(--mark); }
+
+/* 小屏幕时：显示移动版，隐藏 PC 版 */
+@media screen and (max-width: 600px) {
+  #nav ul li {
+    padding: 0 0.5rem 0 0;
+    margin: 0 0 0 -1em;
+    text-transform: lowercase;
+    font-family: Courier New, cursive; }
+  .header-inner {
+    flex-direction: column;
+    /* 垂直堆叠：第一部分（图+nav）、第二部分（content） */
+    align-items: center;
+    /* 水平居中 */
+    gap: 0em; }
+  .header-left {
+    flex-direction: row;
+    /* 图片 + nav 横向排列 */
+    /*gap: 1em;*/
+    justify-content: center;
+    align-items: center; }
+  .header-left img {
+    width: 160px;
+    /* 缩小一点图片 */ }
+  .header-content {
+    /*margin-top: 1em;*/
+    width: 100%; }
+  .header-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em; } }
