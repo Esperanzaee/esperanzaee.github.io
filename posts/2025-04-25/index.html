@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+
+  
+  
+
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/yzgcxst/dist/%E4%B9%9F%E5%AD%97%E5%B7%A5%E5%8E%82%E5%B0%8F%E7%9F%B3%E5%A4%B4/result.css' />
+
+  
+  
+
+
+  
+  
+  <link id="hljs-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+
+
+
+  
+    <meta name="description" content="测试文件">
+    <meta property="og:title" content="Markdown 示例">
+    <meta property="og:description" content="测试文件">
+    <meta property="og:image" content="">
+  
+
+  <title>
+    
+      Markdown 示例 | ououjin
+    
+  </title>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".blur").forEach(function (el) {
+        el.addEventListener("click", function () {
+          el.classList.toggle("revealed");
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('JavaScript loaded and DOMContentLoaded event fired.');
+
+      const postContent = document.querySelector('#post-content');
+      if (!postContent) {
+        console.error('Error: #post-content not found!');
+        return;
+      }
+
+      
+      const paragraphs = postContent.querySelectorAll('p');
+      paragraphs.forEach((paragraph) => {
+        const img = paragraph.querySelector('img');
+        if (img && img.id !== 'emoji') {
+          paragraph.style.textAlign = 'center';
+          paragraph.style.fontSize = '90%';
+        }
+      });
+
+      
+      const imgs = postContent.querySelectorAll('img');
+      imgs.forEach((img) => {
+        if (img.closest('p')) return; 
+        if (img.id === 'emoji') return;
+        if (!img.alt) return;
+
+        const next = img.nextSibling;
+        if (next && next.nodeType === Node.TEXT_NODE && next.textContent.trim()) {
+          const span = document.createElement('span');
+          span.textContent = next.textContent.trim();
+          span.style.display = 'block';
+          span.style.textAlign = 'center';
+          span.style.fontSize = '90%';
+          img.parentNode.replaceChild(span, next);
+        }
+      });
+
+      
+      const overlay = document.createElement('div');
+      overlay.className = 'image-overlay';
+      document.body.appendChild(overlay);
+
+      const overlayImage = document.createElement('img');
+      overlay.appendChild(overlayImage);
+
+      overlay.addEventListener('click', () => {
+        overlay.classList.remove('active');
+      });
+
+      
+      function fixImageSize(img) {
+        if (!img.hasAttribute('width')) {
+          img.setAttribute('width', img.naturalWidth);
+        }
+        if (!img.hasAttribute('height')) {
+          img.setAttribute('height', img.naturalHeight);
+        }
+      }
+
+      
+      const enableImageZoom = (img) => {
+        if (!img.src.includes('/img/emoji/')) {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', () => {
+            overlayImage.removeAttribute('src');
+            overlayImage.removeAttribute('width');
+            overlayImage.removeAttribute('height');
+
+            overlayImage.src = img.src;
+            overlayImage.setAttribute('width', img.width);
+            overlayImage.setAttribute('height', img.height);
+
+            overlayImage.style.width = 'auto';
+            overlayImage.style.height = 'auto';
+
+            overlay.classList.add('active');
+          });
+        }
+
+        
+        if (img.complete) {
+          fixImageSize(img);
+        } else {
+          img.addEventListener('load', () => fixImageSize(img));
+        }
+      };
+
+      
+      const images = Array.from(postContent.querySelectorAll('img'));
+      if (images.length === 0) {
+        console.log('No images found.');
+        return;
+      }
+      console.log(`Found ${images.length} images.`);
+
+      images.forEach(enableImageZoom);
+    });
+  </script>
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/nostyle/site/avatar.png" />
+
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/main.8208e0f9b108aa4e08f9bc6faf6befc2a5bbf533965aa612a5f7a0c15e5a41ecd891047708df06cb6269901e538faa7ef96eb9c7870e8fc1c82a21bac904c817.css" integrity="sha512-ggjg&#43;bEIqk4I&#43;bxvr2vvwqW79TOWWqYSpfegwV5aQezYkQR3CN8Gy2JpkB5Tj6p&#43;&#43;W65x4cOj8HIKiG6yQTIFw==" />
+  
+
+
+  
+  
+
+  <script defer>
+    function toggleMenu(element) {
+      const content = element.nextElementSibling;
+      const allContents = document.querySelectorAll('.menu-content');
+
+      
+      allContents.forEach(item => {
+        
+        if (item !== content) {
+          item.style.display = 'none';
+        }
+      });
+
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'table-row';  
+      } else {
+        content.style.display = 'none';  
+      }
+    }
+  </script>
+
+
+</head>
+
+<div id="theme-toggle" class="theme-toggle" style="position: fixed; top: 20px; right: 20px; display: flex; gap: 5px; z-index: 999;">
+    <div id="light-btn" style="">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+        </svg>
+    </div>
+    <div id="dark-btn" style="">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+        </svg>
+    </div>
+</div>
+
+
+<script>
+    const lightBtn = document.getElementById('light-btn');
+    const darkBtn = document.getElementById('dark-btn');
+    const themeToggle = document.getElementById('theme-toggle');
+
+    
+    let currentTheme = localStorage.getItem('theme') || 'auto';
+    if (currentTheme === 'auto') {
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        currentTheme = prefersDarkScheme ? 'dark' : 'light';
+    }
+    document.body.setAttribute('a', currentTheme);
+    document.body.classList.add(currentTheme + '-mode');
+
+
+    function updateHighlightTheme() {
+        const hljsLink = document.getElementById("hljs-theme");
+        const mode = document.body.getAttribute("a");
+        if (!hljsLink) return;
+
+        if (mode === "dark") {
+            hljsLink.href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github-dark.min.css";
+        } else {
+            hljsLink.href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css";
+        }
+    }
+
+    
+    const updateIcons = () => {
+        if (currentTheme === 'light') {
+            lightBtn.style.display = 'block';
+            darkBtn.style.display = 'none';
+        } else {
+            lightBtn.style.display = 'none';
+            darkBtn.style.display = 'block';
+        }
+    };
+    updateIcons();
+    updateHighlightTheme(); 
+    
+    const toggleTheme = () => {
+        if (currentTheme === 'light') {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            currentTheme = 'dark';
+        } else {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            currentTheme = 'light';
+        }
+        localStorage.setItem('theme', currentTheme);
+        document.body.setAttribute('a', currentTheme);
+        updateIcons();
+        updateHighlightTheme(); 
+    };
+
+    
+    themeToggle.addEventListener('click', toggleTheme);
+
+    
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const docHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        const winHeight = window.innerHeight || document.documentElement.clientHeight;
+        const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+
+        if (scrollPercent >= 10 && scrollPercent <= 40) {
+            themeToggle.style.opacity = (1 - (scrollPercent - 10) / 30).toFixed(2);
+        } else if (scrollPercent > 40) {
+            themeToggle.style.opacity = 0;
+        } else {
+            themeToggle.style.opacity = 1;
+        }
+    });
+
+</script><body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<div class="post-meta">
+    <div id="header-post" >
+  <span id="nav" data-pagefind-ignore>
+    <ul>
+      
+        <li><a href="/">首页</a></li>
+      
+        <li><a href="/posts">小记</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+    </ul>
+  </span>
+</div>
+
+
+
+</div>
+<article >
+    <h1 data-pagefind-meta="title" t>Markdown 示例</h1>
+    <div id="post-meta">
+        <time datetime="2025-04-25 00:00:00 &#43;0000 UTC">
+            2025-04-25
+            <span> ‧ 180</span>
+            <span>words</span>
+            ‧ <span> </span>
+            
+                    
+                    <a href="/tags/testing-posts">＃Testing Posts</a>
+                    
+            
+        </time>
+        
+        <blockquote id="post-description">
+            测试文件
+        </blockquote>
+        
+    </div>
+    
+    
+        <div class="post-toc-mobile" id="post-toc-mobile" data-pagefind-ignore>
+        <details>
+            <summary>📑 目录</summary>
+                <div >
+        <aside>
+            
+            
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#二级标题-h2">二级标题 H2</a>
+      <ul>
+        <li><a href="#三级标题-h3">三级标题 H3</a></li>
+      </ul>
+    </li>
+    <li><a href="#链接示例">链接示例</a></li>
+    <li><a href="#图片示例">图片示例</a></li>
+    <li><a href="#列表示例">列表示例</a></li>
+    <li><a href="#代码块示例">代码块示例</a></li>
+  </ul>
+</nav>
+            
+            
+        </aside>
+        <a href="#" id="toc-toggle"></a>
+    </div>
+        </details>
+        </div>
+        <hr>
+        <div class="post-toc" id="post-toc" data-pagefind-ignore>
+        <header><strong>📑 目录</strong></header>
+                <div >
+        <aside>
+            
+            
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#二级标题-h2">二级标题 H2</a>
+      <ul>
+        <li><a href="#三级标题-h3">三级标题 H3</a></li>
+      </ul>
+    </li>
+    <li><a href="#链接示例">链接示例</a></li>
+    <li><a href="#图片示例">图片示例</a></li>
+    <li><a href="#列表示例">列表示例</a></li>
+    <li><a href="#代码块示例">代码块示例</a></li>
+  </ul>
+</nav>
+            
+            
+        </aside>
+        <a href="#" id="toc-toggle"></a>
+    </div>
+        </div>
+    
+    
+    <div id="post-content"  data-pagefind-body>
+        <h2 id="二级标题-h2">二级标题 H2</h2>
+<p>这是一个二级标题的段落示例。</p>
+<h3 id="三级标题-h3">三级标题 H3</h3>
+<p>这是三级标题下面的内容。</p>
+<h4 id="四级标题-h4">四级标题 H4</h4>
+<p>继续往下是四级标题。</p>
+<h5 id="五级标题-h5">五级标题 H5</h5>
+<p>五级标题内容示例。</p>
+<h6 id="六级标题-h6">六级标题 H6</h6>
+<p>六级标题内容示例。</p>
+<hr>
+<h2 id="链接示例">链接示例</h2>
+<ul>
+<li>这是一个<a href="https://gohugo.io/">Hugo 官方网站</a>的链接。</li>
+<li>这是一个内部链接示例：<a href="/">主页</a>。</li>
+</ul>
+<hr>
+<h2 id="图片示例">图片示例</h2>
+
+<img src="https://via.placeholder.com/150" alt="示例图片" loading="lazy" class="post-image"/>
+示例图片
+
+    <hr>
+<h2 id="列表示例">列表示例</h2>
+<ul>
+<li>无序列表项一</li>
+<li>无序列表项二
+<ul>
+<li>嵌套子项</li>
+</ul>
+</li>
+<li>无序列表项三</li>
+</ul>
+<ol>
+<li>有序列表项一</li>
+<li>有序列表项二</li>
+<li>有序列表项三</li>
+</ol>
+<hr>
+<h2 id="代码块示例">代码块示例</h2>
+
+<div class="highlight">
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f00">package</span> main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f00">import</span> <span style="color:#87ceeb">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f00">func</span> <span style="color:#ff0">main</span>() {
+</span></span><span style="display:flex;"><span>    fmt.<span style="color:#ff0">Println</span>(<span style="color:#87ceeb">&#34;Hello, Hugo!&#34;</span>)
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+    <button class="copy-code-button" type="button" title="Copy">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16">
+            <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+            <path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+        </svg>
+    </button>
+</div>
+        
+    </div>
+    <br>
+    <div style="padding-bottom:3px;"></div>
+</article>
+
+<nav class="custom-paginav">
+    
+    <a class="custom-paginav-prev" href="/posts/test-cjk/">
+        <span class="custom-paginav-title">« Prev</span><br>
+        <span>Test CJK</span>
+    </a>
+    
+    
+    <a class="custom-paginav-next" href="/posts/2025-04-26/">
+        <span class="custom-paginav-title">Next »</span><br>
+        <span>Markdown 示例</span>
+    </a>
+    
+</nav>
+
+
+
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+
+<div id="comments" class="comments" data-pagefind-ignore>
+    <style>
+    :root {
+        --waline-color: unset;
+        --waline-bgcolor-light: unset;
+    }
+    .wl-card {
+        border: 0px solid #eee;
+    }
+
+    .wl-card .wl-quote {
+        border-inline-start: 0px dashed rgba(237, 237, 237, .5);
+    }
+
+    .wl-card-item {
+        position: relative;
+        display: flex;
+        padding: 0.2em;
+    }
+
+    .wl-addr {
+        display: none !important;
+        color: transparent !important;
+    }
+
+    .wl-content .vemoji,
+    .wl-content .wl-emoji {
+        display: inline-block;
+        vertical-align: baseline;
+        height: 3.4em !important;
+        margin: -0.125em 0.25em;
+    }
+
+    img.wl-emoji,
+    img.vemoji {
+        vertical-align: sub;
+        transition: ease-out 0.6s;
+    }
+
+    img.wl-emoji:hover,
+    img.vemoji:hover {
+        transform: scale(1.8) !important;
+    }
+
+    .wl-header {
+        display: flex;
+        overflow: hidden;
+        padding: 0 4px;
+        border-bottom: 0px dashed var(--waline-border-color);
+        border-top-left-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+
+    .wl-btn.primary {
+        border-color: transparent !important;
+        background: Peru;
+        color: white;
+    }
+
+    @media (max-width: 580px) {
+        .wl-header-item:not(:last-child) {
+            border-bottom: 0px dashed var(--waline-border-color);
+        }
+    }
+
+    :root {
+        --waline-theme-color: Peru;
+        --waline-active-color: Peru;
+        --waline-light-grey: unset;
+        --waline-info-color: unset;
+         
+        --waline-border: 0px solid peru;
+    }
+    [data-waline] a {
+        color:  var(--link-color);
+    }
+
+    .wl-card .wl-badge {
+        display: inline-block;
+        margin-inline-end: 1em;
+        padding: 0 .3em;
+        border: 2px solid peru;
+        border-radius: 4px;
+        color: peru;
+        font-weight: bold;
+        font-size: 65%;
+    }
+
+    .wl-editor:focus,
+    .wl-input:focus {
+        background: transparent;
+    }
+
+    .wl-panel {
+        background-color: rgb(242, 237, 230);
+         
+         
+         
+        border: rgb(163, 143, 125) solid 1px;
+        background-image:
+                linear-gradient(rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.8)),
+                url('/site/bg-rain2_5color1.gif');
+        background-repeat: repeat;
+    }
+    body[a="dark"] .wl-panel {
+        background-image: none !important;
+        background-color: rgba(23, 14, 14, 0.38) !important;
+    }
+
+    .wl-card .wl-delete,
+    .wl-card .wl-like,
+    .wl-card .wl-reply,
+    .wl-card .wl-edit,
+    .wl-card span.wl-nick,
+    .wl-empty, .wl-admin-actions,
+    [data-waline] p {
+        color: unset;
+    }
+
+    .wl-info .wl-text-number {
+        color: unset;
+        font-size: .75em;
+    }
+    .wl-editor, .wl-input {
+    font-family: inherit;
+        font-size: 80%;
+    }
+
+</style>
+<div id="waline" data-pagefind-ignore></div>
+<script>
+    Waline.init({
+        el: "#waline",
+        serverURL: "",
+        emoji: [
+            "https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan",
+            "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif",
+            "https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs",
+            "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png",
+        ],
+        requiredMeta: ["name", "email", "url"],
+        dark: true,
+        locale: {
+            placeholder: '欢迎留言~',
+            admin: 'admin',
+        }
+    });
+</script>
+</div>
+
+
+    <div>
+
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 2021 - 2025
+        <a href="https://localhost:1313/"> ououjin </a> · <i class="fas fa-bell"> </i>
+        <a id="days">0</a> Days<br>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span>All rights reserved.</span><br>
+        <span>themes by <a href="https://github.com/Meyerclex/hugo-binder-theme">  再會，謝謝所有的魚 </a> .</span>
+
+    </section>
+
+    
+    <script>
+        var s1 = '2025-08-12'; 
+        s1 = new Date(s1.replace(/-/g, "/"));
+        var s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+    </script>
+
+    
+    
+    <script src="/js/clipboard.js"></script>
+    
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            hljs.highlightAll(); 
+        });
+
+    </script>
+
+</footer>
+
+
+
+
+
+
+</div>
+
+            </div>
+        </main>
+         
+  
+  <script src="/js/view-image.min.js" defer></script>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selector = '#post-content img:not([no-view])';
+      if (window.ViewImage) {
+        ViewImage.init(selector);
+
+            
+    console.log("初始化 ViewImage，匹配到的图片:", document.querySelectorAll(selector));
+  } else {
+    console.error("ViewImage 未加载，请检查路径");
+      }
+    });
+  </script>
+</body></html>

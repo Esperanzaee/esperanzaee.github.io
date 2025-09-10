@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+
+  
+  
+
+  <link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/yzgcxst/dist/%E4%B9%9F%E5%AD%97%E5%B7%A5%E5%8E%82%E5%B0%8F%E7%9F%B3%E5%A4%B4/result.css' />
+
+  
+  
+
+
+  
+  
+  <link id="hljs-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+
+
+
+  
+    <meta name="description" content="Lorem ipsum1 dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.
+Sample heading 1
+Sample heading 2
+Sample heading 3
+Sample heading 4
+Sample heading 5
+Sample heading 6
+Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.">
+    <meta property="og:title" content="overview">
+    <meta property="og:description" content="Lorem ipsum1 dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.
+Sample heading 1
+Sample heading 2
+Sample heading 3
+Sample heading 4
+Sample heading 5
+Sample heading 6
+Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.">
+    <meta property="og:image" content="">
+  
+
+  <title>
+    
+      overview | ououjin
+    
+  </title>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".blur").forEach(function (el) {
+        el.addEventListener("click", function () {
+          el.classList.toggle("revealed");
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('JavaScript loaded and DOMContentLoaded event fired.');
+
+      const postContent = document.querySelector('#post-content');
+      if (!postContent) {
+        console.error('Error: #post-content not found!');
+        return;
+      }
+
+      
+      const paragraphs = postContent.querySelectorAll('p');
+      paragraphs.forEach((paragraph) => {
+        const img = paragraph.querySelector('img');
+        if (img && img.id !== 'emoji') {
+          paragraph.style.textAlign = 'center';
+          paragraph.style.fontSize = '90%';
+        }
+      });
+
+      
+      const imgs = postContent.querySelectorAll('img');
+      imgs.forEach((img) => {
+        if (img.closest('p')) return; 
+        if (img.id === 'emoji') return;
+        if (!img.alt) return;
+
+        const next = img.nextSibling;
+        if (next && next.nodeType === Node.TEXT_NODE && next.textContent.trim()) {
+          const span = document.createElement('span');
+          span.textContent = next.textContent.trim();
+          span.style.display = 'block';
+          span.style.textAlign = 'center';
+          span.style.fontSize = '90%';
+          img.parentNode.replaceChild(span, next);
+        }
+      });
+
+      
+      const overlay = document.createElement('div');
+      overlay.className = 'image-overlay';
+      document.body.appendChild(overlay);
+
+      const overlayImage = document.createElement('img');
+      overlay.appendChild(overlayImage);
+
+      overlay.addEventListener('click', () => {
+        overlay.classList.remove('active');
+      });
+
+      
+      function fixImageSize(img) {
+        if (!img.hasAttribute('width')) {
+          img.setAttribute('width', img.naturalWidth);
+        }
+        if (!img.hasAttribute('height')) {
+          img.setAttribute('height', img.naturalHeight);
+        }
+      }
+
+      
+      const enableImageZoom = (img) => {
+        if (!img.src.includes('/img/emoji/')) {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', () => {
+            overlayImage.removeAttribute('src');
+            overlayImage.removeAttribute('width');
+            overlayImage.removeAttribute('height');
+
+            overlayImage.src = img.src;
+            overlayImage.setAttribute('width', img.width);
+            overlayImage.setAttribute('height', img.height);
+
+            overlayImage.style.width = 'auto';
+            overlayImage.style.height = 'auto';
+
+            overlay.classList.add('active');
+          });
+        }
+
+        
+        if (img.complete) {
+          fixImageSize(img);
+        } else {
+          img.addEventListener('load', () => fixImageSize(img));
+        }
+      };
+
+      
+      const images = Array.from(postContent.querySelectorAll('img'));
+      if (images.length === 0) {
+        console.log('No images found.');
+        return;
+      }
+      console.log(`Found ${images.length} images.`);
+
+      images.forEach(enableImageZoom);
+    });
+  </script>
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/nostyle/site/avatar.png" />
+
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/main.8208e0f9b108aa4e08f9bc6faf6befc2a5bbf533965aa612a5f7a0c15e5a41ecd891047708df06cb6269901e538faa7ef96eb9c7870e8fc1c82a21bac904c817.css" integrity="sha512-ggjg&#43;bEIqk4I&#43;bxvr2vvwqW79TOWWqYSpfegwV5aQezYkQR3CN8Gy2JpkB5Tj6p&#43;&#43;W65x4cOj8HIKiG6yQTIFw==" />
+  
+
+
+  
+  
+
+  <script defer>
+    function toggleMenu(element) {
+      const content = element.nextElementSibling;
+      const allContents = document.querySelectorAll('.menu-content');
+
+      
+      allContents.forEach(item => {
+        
+        if (item !== content) {
+          item.style.display = 'none';
+        }
+      });
+
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'table-row';  
+      } else {
+        content.style.display = 'none';  
+      }
+    }
+  </script>
+
+
+</head>
+
+<div id="theme-toggle" class="theme-toggle" style="position: fixed; top: 20px; right: 20px; display: flex; gap: 5px; z-index: 999;">
+    <div id="light-btn" style="">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+        </svg>
+    </div>
+    <div id="dark-btn" style="">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+        </svg>
+    </div>
+</div>
+
+
+<script>
+    const lightBtn = document.getElementById('light-btn');
+    const darkBtn = document.getElementById('dark-btn');
+    const themeToggle = document.getElementById('theme-toggle');
+
+    
+    let currentTheme = localStorage.getItem('theme') || 'auto';
+    if (currentTheme === 'auto') {
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        currentTheme = prefersDarkScheme ? 'dark' : 'light';
+    }
+    document.body.setAttribute('a', currentTheme);
+    document.body.classList.add(currentTheme + '-mode');
+
+
+    function updateHighlightTheme() {
+        const hljsLink = document.getElementById("hljs-theme");
+        const mode = document.body.getAttribute("a");
+        if (!hljsLink) return;
+
+        if (mode === "dark") {
+            hljsLink.href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github-dark.min.css";
+        } else {
+            hljsLink.href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css";
+        }
+    }
+
+    
+    const updateIcons = () => {
+        if (currentTheme === 'light') {
+            lightBtn.style.display = 'block';
+            darkBtn.style.display = 'none';
+        } else {
+            lightBtn.style.display = 'none';
+            darkBtn.style.display = 'block';
+        }
+    };
+    updateIcons();
+    updateHighlightTheme(); 
+    
+    const toggleTheme = () => {
+        if (currentTheme === 'light') {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            currentTheme = 'dark';
+        } else {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            currentTheme = 'light';
+        }
+        localStorage.setItem('theme', currentTheme);
+        document.body.setAttribute('a', currentTheme);
+        updateIcons();
+        updateHighlightTheme(); 
+    };
+
+    
+    themeToggle.addEventListener('click', toggleTheme);
+
+    
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const docHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        const winHeight = window.innerHeight || document.documentElement.clientHeight;
+        const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+
+        if (scrollPercent >= 10 && scrollPercent <= 40) {
+            themeToggle.style.opacity = (1 - (scrollPercent - 10) / 30).toFixed(2);
+        } else if (scrollPercent > 40) {
+            themeToggle.style.opacity = 0;
+        } else {
+            themeToggle.style.opacity = 1;
+        }
+    });
+
+</script><body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<div class="post-meta">
+    <div id="header-post" >
+  <span id="nav" data-pagefind-ignore>
+    <ul>
+      
+        <li><a href="/">首页</a></li>
+      
+        <li><a href="/posts">小记</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+    </ul>
+  </span>
+</div>
+
+
+
+</div>
+<article >
+    <h1 data-pagefind-meta="title" t>overview</h1>
+    <div id="post-meta">
+        <time datetime="2020-07-07 00:00:00 &#43;0800 CST">
+            2020-07-07
+            <span> ‧ 401</span>
+            <span>words</span>
+            ‧ <span> </span>
+            
+        </time>
+        
+    </div>
+    
+    
+        <div class="post-toc-mobile" id="post-toc-mobile" data-pagefind-ignore>
+        <details>
+            <summary>📑 目录</summary>
+                <div >
+        <aside>
+            
+            
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sample-heading-2">Sample heading 2</a>
+      <ul>
+        <li><a href="#sample-heading-3">Sample heading 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#lists">Lists</a></li>
+    <li><a href="#blockquote">Blockquote</a></li>
+    <li><a href="#thematic-breaks-">Thematic breaks (<hr>)</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#tables">Tables</a></li>
+    <li><a href="#images">Images</a></li>
+  </ul>
+</nav>
+            
+            
+        </aside>
+        <a href="#" id="toc-toggle"></a>
+    </div>
+        </details>
+        </div>
+        <hr>
+        <div class="post-toc" id="post-toc" data-pagefind-ignore>
+        <header><strong>📑 目录</strong></header>
+                <div >
+        <aside>
+            
+            
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sample-heading-2">Sample heading 2</a>
+      <ul>
+        <li><a href="#sample-heading-3">Sample heading 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#lists">Lists</a></li>
+    <li><a href="#blockquote">Blockquote</a></li>
+    <li><a href="#thematic-breaks-">Thematic breaks (<hr>)</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#tables">Tables</a></li>
+    <li><a href="#images">Images</a></li>
+  </ul>
+</nav>
+            
+            
+        </aside>
+        <a href="#" id="toc-toggle"></a>
+    </div>
+        </div>
+    
+    
+    <div id="post-content"  data-pagefind-body>
+        <p>Lorem ipsum<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.</p>
+<h1 id="sample-heading-1">Sample heading 1</h1>
+<h2 id="sample-heading-2">Sample heading 2</h2>
+<h3 id="sample-heading-3">Sample heading 3</h3>
+<h4 id="sample-heading-4">Sample heading 4</h4>
+<h5 id="sample-heading-5">Sample heading 5</h5>
+<h6 id="sample-heading-6">Sample heading 6</h6>
+<p>Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.</p>
+<h2 id="lists">Lists</h2>
+<p>Unordered:</p>
+<ul>
+<li>Fusce non velit cursus ligula mattis convallis vel at metus<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</li>
+<li>Sed pharetra tellus massa, non elementum eros vulputate non.</li>
+<li>Suspendisse potenti.</li>
+</ul>
+<p>Ordered:</p>
+<ol>
+<li>Quisque arcu felis, laoreet vel accumsan sit amet, fermentum at nunc.</li>
+<li>Sed massa quam, auctor in eros quis, porttitor tincidunt orci.</li>
+<li>Nulla convallis id sapien ornare viverra.</li>
+<li>Nam a est eget ligula pellentesque posuere.</li>
+</ol>
+<h2 id="blockquote">Blockquote</h2>
+<p>The following is a blockquote:</p>
+<blockquote>
+<p>Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.</p></blockquote>
+<h2 id="thematic-breaks-">Thematic breaks (<hr>)</h2>
+<p>Mauris viverra dictum ultricies<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. <strong>You can put some text inside the horizontal rule like so.</strong></p>
+<hr data-content="with text">
+<p>Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. <strong>Or you can just have an clean horizontal rule.</strong></p>
+<hr>
+<p>Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.</p>
+<h2 id="code">Code</h2>
+<p>Now some code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f00">const</span> ultimateTruth = <span style="color:#87ceeb">&#39;this theme is the best!&#39;</span>;
+</span></span><span style="display:flex;"><span>console.log(ultimateTruth);</span></span></code></pre></div>
+<p>And here is some <code>inline code</code>!</p>
+<h2 id="tables">Tables</h2>
+<p>Now a table:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tables</th>
+          <th style="text-align: center">Are</th>
+          <th style="text-align: right">Cool</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>col 3 is</td>
+          <td style="text-align: center">right-aligned</td>
+          <td style="text-align: right">$1600</td>
+      </tr>
+      <tr>
+          <td>col 2 is</td>
+          <td style="text-align: center">centered</td>
+          <td style="text-align: right">$12</td>
+      </tr>
+      <tr>
+          <td>zebra stripes</td>
+          <td style="text-align: center">are neat</td>
+          <td style="text-align: right">$1</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="images">Images</h2>
+
+<img src="https://raw.githubusercontent.com/Masellum/hugo-theme-nostyleplease/main/logo.png" alt="theme logo" loading="lazy" class="post-image"/>
+theme logo
+
+    <p>Logo of <em>no style, please!</em> theme<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<hr data-content="footnotes">
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>this is a footnote. It should highlight if you click on the corresponding superscript number.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>hey there, i&rsquo;m using no style please!&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>this is another footnote.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>this is a very very long footnote to test if a very very long footnote brings some problems or not. I strongly hope that there are no problems but you know sometimes problems arise from nowhere.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        
+    </div>
+    <br>
+    <div style="padding-bottom:3px;"></div>
+</article>
+
+<nav class="custom-paginav">
+    
+    <a class="custom-paginav-prev" href="/posts/test-markdown/">
+        <span class="custom-paginav-title">« Prev</span><br>
+        <span>Test Markdown</span>
+    </a>
+    
+    
+    <a class="custom-paginav-next" href="/posts/2020-07-08-very-very-very-long-title-and-very-very-very-short-content/">
+        <span class="custom-paginav-title">Next »</span><br>
+        <span>very very very long title and very very very short content</span>
+    </a>
+    
+</nav>
+
+
+
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+
+<div id="comments" class="comments" data-pagefind-ignore>
+    <style>
+    :root {
+        --waline-color: unset;
+        --waline-bgcolor-light: unset;
+    }
+    .wl-card {
+        border: 0px solid #eee;
+    }
+
+    .wl-card .wl-quote {
+        border-inline-start: 0px dashed rgba(237, 237, 237, .5);
+    }
+
+    .wl-card-item {
+        position: relative;
+        display: flex;
+        padding: 0.2em;
+    }
+
+    .wl-addr {
+        display: none !important;
+        color: transparent !important;
+    }
+
+    .wl-content .vemoji,
+    .wl-content .wl-emoji {
+        display: inline-block;
+        vertical-align: baseline;
+        height: 3.4em !important;
+        margin: -0.125em 0.25em;
+    }
+
+    img.wl-emoji,
+    img.vemoji {
+        vertical-align: sub;
+        transition: ease-out 0.6s;
+    }
+
+    img.wl-emoji:hover,
+    img.vemoji:hover {
+        transform: scale(1.8) !important;
+    }
+
+    .wl-header {
+        display: flex;
+        overflow: hidden;
+        padding: 0 4px;
+        border-bottom: 0px dashed var(--waline-border-color);
+        border-top-left-radius: 0em;
+        border-top-right-radius: 0em;
+    }
+
+    .wl-btn.primary {
+        border-color: transparent !important;
+        background: Peru;
+        color: white;
+    }
+
+    @media (max-width: 580px) {
+        .wl-header-item:not(:last-child) {
+            border-bottom: 0px dashed var(--waline-border-color);
+        }
+    }
+
+    :root {
+        --waline-theme-color: Peru;
+        --waline-active-color: Peru;
+        --waline-light-grey: unset;
+        --waline-info-color: unset;
+         
+        --waline-border: 0px solid peru;
+    }
+    [data-waline] a {
+        color:  var(--link-color);
+    }
+
+    .wl-card .wl-badge {
+        display: inline-block;
+        margin-inline-end: 1em;
+        padding: 0 .3em;
+        border: 2px solid peru;
+        border-radius: 4px;
+        color: peru;
+        font-weight: bold;
+        font-size: 65%;
+    }
+
+    .wl-editor:focus,
+    .wl-input:focus {
+        background: transparent;
+    }
+
+    .wl-panel {
+        background-color: rgb(242, 237, 230);
+         
+         
+         
+        border: rgb(163, 143, 125) solid 1px;
+        background-image:
+                linear-gradient(rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.8)),
+                url('/site/bg-rain2_5color1.gif');
+        background-repeat: repeat;
+    }
+    body[a="dark"] .wl-panel {
+        background-image: none !important;
+        background-color: rgba(23, 14, 14, 0.38) !important;
+    }
+
+    .wl-card .wl-delete,
+    .wl-card .wl-like,
+    .wl-card .wl-reply,
+    .wl-card .wl-edit,
+    .wl-card span.wl-nick,
+    .wl-empty, .wl-admin-actions,
+    [data-waline] p {
+        color: unset;
+    }
+
+    .wl-info .wl-text-number {
+        color: unset;
+        font-size: .75em;
+    }
+    .wl-editor, .wl-input {
+    font-family: inherit;
+        font-size: 80%;
+    }
+
+</style>
+<div id="waline" data-pagefind-ignore></div>
+<script>
+    Waline.init({
+        el: "#waline",
+        serverURL: "",
+        emoji: [
+            "https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan",
+            "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif",
+            "https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs",
+            "https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png",
+        ],
+        requiredMeta: ["name", "email", "url"],
+        dark: true,
+        locale: {
+            placeholder: '欢迎留言~',
+            admin: 'admin',
+        }
+    });
+</script>
+</div>
+
+
+    <div>
+
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 2021 - 2025
+        <a href="https://localhost:1313/"> ououjin </a> · <i class="fas fa-bell"> </i>
+        <a id="days">0</a> Days<br>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span>All rights reserved.</span><br>
+        <span>themes by <a href="https://github.com/Meyerclex/hugo-binder-theme">  再會，謝謝所有的魚 </a> .</span>
+
+    </section>
+
+    
+    <script>
+        var s1 = '2025-08-12'; 
+        s1 = new Date(s1.replace(/-/g, "/"));
+        var s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+    </script>
+
+    
+    
+    <script src="/js/clipboard.js"></script>
+    
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            hljs.highlightAll(); 
+        });
+
+    </script>
+
+</footer>
+
+
+
+
+
+
+</div>
+
+            </div>
+        </main>
+         
+  
+  <script src="/js/view-image.min.js" defer></script>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selector = '#post-content img:not([no-view])';
+      if (window.ViewImage) {
+        ViewImage.init(selector);
+
+            
+    console.log("初始化 ViewImage，匹配到的图片:", document.querySelectorAll(selector));
+  } else {
+    console.error("ViewImage 未加载，请检查路径");
+      }
+    });
+  </script>
+</body></html>
