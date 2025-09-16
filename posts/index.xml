@@ -1,1 +1,774 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 没有脚的鸟</title><link>https://esperanzaee.github.io/posts/</link><description>Recent content in Posts on 没有脚的鸟</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客搭建流程</title><link>https://esperanzaee.github.io/posts/upgrade_submodule/</link><pubDate>Wed, 10 Sep 2025 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/upgrade_submodule/</guid><description>10 Sep | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>。゜゜(´Ｏ`) ゜゜。</title><link>https://esperanzaee.github.io/posts/cry/</link><pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/cry/</guid><description>22 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>记忆</title><link>https://esperanzaee.github.io/posts/memory/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/memory/</guid><description>20 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>压轴</title><link>https://esperanzaee.github.io/posts/yazhou-misconception/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/yazhou-misconception/</guid><description>18 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>现在的剧宣下料都好猛啊！</title><link>https://esperanzaee.github.io/posts/wild-drama-promo-trends/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/wild-drama-promo-trends/</guid><description>18 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>微信最烦看到亲戚的消息</title><link>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</link><pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</guid><description>17 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>广东打工人的台风天</title><link>https://esperanzaee.github.io/posts/typhoon-frequency-guangdong-2025/</link><pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/typhoon-frequency-guangdong-2025/</guid><description>13 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>又双孬孬长痘了......</title><link>https://esperanzaee.github.io/posts/hello_oily/</link><pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/hello_oily/</guid><description>12 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>令人无语至极的邻居</title><link>https://esperanzaee.github.io/posts/noisy_neighbors/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/noisy_neighbors/</guid><description>01 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>iconify 图标引用</title><link>https://esperanzaee.github.io/posts/iconify-quote/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/iconify-quote/</guid><description>03 Jul | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>Markdown 美食食谱写作指南</title><link>https://esperanzaee.github.io/posts/markdown-syntax-guide/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/markdown-syntax-guide/</guid><description>30 Apr | 「没有脚的鸟」更新了一篇博客 🍰</description></item><item><title>Test TOC, deatails and styles</title><link>https://esperanzaee.github.io/posts/test-toc-and-details/</link><pubDate>Tue, 18 Aug 2020 13:34:54 +0200</pubDate><guid>https://esperanzaee.github.io/posts/test-toc-and-details/</guid><description>18 Aug | 「没有脚的鸟」更新了一篇博客 🍰</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 没有脚的鸟</title><link>https://esperanzaee.github.io/posts/</link><description>Recent content in Posts on 没有脚的鸟</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客搭建流程</title><link>https://esperanzaee.github.io/posts/upgrade_submodule/</link><pubDate>Wed, 10 Sep 2025 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/upgrade_submodule/</guid><description>&lt;h2 id="博客自动化部署到github-pages流程"&gt;博客自动化部署到github pages流程&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用私有仓库A → 构建 Hugo → 部署到公开仓库B(xxxxx.github.io)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="第一步创建-personal-access-token-pat"&gt;第一步：创建 Personal Access Token (PAT)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;你需要一个有权限写入目标仓库的 token。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;创建 PAT
+前往：&lt;a href="https://github.com/settings/tokens"&gt;https://github.com/settings/tokens&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;填写&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Token name: deploy-to-xxxxxx.github.io&lt;/li&gt;
+&lt;li&gt;Expiration: 选择 90 天或自定义&lt;/li&gt;
+&lt;li&gt;Repository access: Only select repositories&lt;/li&gt;
+&lt;li&gt;勾选：公开仓库B&lt;/li&gt;
+&lt;li&gt;Permissions&lt;br&gt;
+Repository contents: Read and write&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;点击 Generate token，复制生成的 token（形如 ghp_xxx&amp;hellip;）并保存！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关掉页面后就再也看不到了！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="第二步在私有仓库添加-secret"&gt;第二步：在私有仓库添加 Secret&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;进入私有仓库的 settings → secrets → actions&lt;/li&gt;
+&lt;li&gt;点击 New repository secret
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Field&lt;/th&gt;
+ &lt;th&gt;value&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Name&lt;/td&gt;
+ &lt;td&gt;PERSONAL_TOKEN&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;value&lt;/td&gt;
+ &lt;td&gt;粘贴第一步生成的token&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="第三步配置-ci-文件githubworkflowsciyml"&gt;第三步：配置 CI 文件（.github/workflows/ci.yml）&lt;/h3&gt;
+&lt;p&gt;在根目录中创建：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;.github/workflows/ci.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件内容如下：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;name: Deploy Hugo Site
+
+on:
+ push:
+ branches:
+ - main
+
+jobs:
+ deploy:
+ runs-on: ubuntu-latest
+
+ steps:
+ - name: Checkout source
+ uses: actions/checkout@v4
+ with:
+ submodules: true
+ fetch-depth: 0
+
+ - name: Setup Hugo
+ uses: peaceiris/actions-hugo@v2
+ with:
+ hugo-version: &amp;#39;latest&amp;#39;
+ extended: true
+
+ - name: Build
+ run: hugo --minify --baseURL &amp;#34;https://blog.esperanzaee.top/&amp;#34;
+
+ - name: Deploy to esperanzaee.github.io
+ uses: peaceiris/actions-gh-pages@v3
+ with:
+ personal_token: ${{ secrets.PERSONAL_TOKEN }}
+ publish_dir: ./public
+ external_repository: Esperanzaee/esperanzaee.github.io
+ publish_branch: main
+ allow_empty_commit: true
+ keep_files: false
+ enable_jekyll: false
+ commit_message: ${{ github.event.head_commit.message }}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="第四步配置-cloudflare-dns如果自己有域名的话"&gt;第四步：配置 Cloudflare DNS（如果自己有域名的话）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;登录 Cloudflare，选择或者添加自己的域名&lt;/p&gt;</description></item><item><title>。゜゜(´Ｏ`) ゜゜。</title><link>https://esperanzaee.github.io/posts/cry/</link><pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/cry/</guid><description>&lt;p&gt;《人物》“友谊降级” 这个主题真的狠狠的看哭了。&lt;br /&gt;
+回想自己小学到现在真的主动或者被动放弃了很多段友谊。&lt;br /&gt;
+有因为自卑和要强，有因为各自不同的发展奔赴各地，有相处太久的情绪积累爆发&amp;hellip;..&lt;br /&gt;
+种种原因简直十发就九发射中自己。&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;第五封信里面的主人公的一段话是看到了就想哭的程度:&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我是一个逃避型社恐分子，慢热、被动，唯一的优点就是足够真诚。往往是别人走了两步以后，我可能才会尝试着迈出第一步，但是一旦有人热情地朝我跑来，我也会毫不犹豫地向ta走去。当我在人群分类夹里把这个人的分类归属到「朋友」，我就会全力以赴尽我所能地对ta释放出我最大的善意和热情。&lt;/p&gt;
+&lt;p&gt;—— 来自 &lt;a href="https://mp.weixin.qq.com/s/GGVlEmsO3xXXL9Zt50mnGg"&gt;《人物》- 遭遇「友情降级」的人&lt;/a&gt; 第五封信&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>记忆</title><link>https://esperanzaee.github.io/posts/memory/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/memory/</guid><description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;全文都是想到啥写啥，没啥逻辑性可言&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;今天刚开始读一本书——《你当像鸟飞往你的山》。&lt;/p&gt;
+&lt;p&gt;第一部分“择善”的第一句话写道：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我最强烈的记忆不是一段记忆。它是我想象出来的，之后回忆起来就像真的发生过一样。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;看到这句话，我不由得想起我的朋友。
+我们几乎每天都会聊天，而我发现她的记忆力真的非常惊人，很多事情她都能记得清清楚楚。
+相比之下，我自己却常常连前两年发生的事情都记不太清楚，更不用说更久以前的事了。&lt;/p&gt;
+&lt;p&gt;在这句话下面，我看到有人这样讨论：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们所看到的、听到的，以及我们的记忆，其实都经过大脑的加工。我们往往注意不到自己不愿注意的事情，同时记忆也会随着时间的推移，被不断重塑，逐渐变得更符合我们当前的认知，离真实的情况越来越远。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你所认为的未必是真相，那只是基于你认知的一种视角；你所记住的也未必是真实，那只是站在你立场上的一种想象。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;关于这种“记忆加工”，我回想了一下那些深深印在我脑海中的记忆——有些甚至不需要特定的物品或场景触发，我就能立刻回想起来。
+但我也意识到，当我向别人讲述这些事的时候，总会不自觉地带上自己的情绪，叙述往往不再客观。&lt;/p&gt;
+&lt;p&gt;我又纳闷为啥有些记忆我能记住，但大部分记不住，DeepSeek是这么回答的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自己在讲述记忆时会“不自主地加上情绪”，这恰恰证明了记忆的主观性和建构性。那些被你情绪渲染最深的记忆，往往已经不再是原始的“事实录像”，而是被你内心世界重新诠释过的、对你具有特殊心理意义的故事。&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>压轴</title><link>https://esperanzaee.github.io/posts/yazhou-misconception/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/yazhou-misconception/</guid><description>&lt;img src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818134246158.png"&gt;
+&lt;p&gt;上周末，不记得是看了什么了。&lt;br&gt;
+看到有个评论说“终于看到有用对压轴的了”。&lt;/p&gt;
+&lt;p&gt;出于好奇，上网查了一下这个词的意思和来源。&lt;br&gt;
+(&lt;em&gt;分割线范围内的说法均来源于网络&lt;/em&gt;)&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;‌压轴‌原指戏曲演出中倒数第二个节目，现也广泛用于形容演出或活动中最精彩、最引人注目的环节。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="压轴的起源与戏曲传统"&gt;压轴的起源与戏曲传统‌&lt;br /&gt;&lt;/h3&gt;
+&lt;p&gt;“压轴”一词源于中国传统戏曲的场次安排。在折子戏演出中，通常分为五个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;‌开锣戏‌：开场节目，用于暖场。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;‌早轴‌和‌中轴‌：中间过渡性节目。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;‌压轴‌：倒数第二个节目，由名角出演，内容最精彩，旨在留住观众。‌&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;‌大轴‌：最后一个节目，多为轻松短小的“送客戏”，观众可在此时段离场。‌&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="现代用法的演变"&gt;现代用法的演变‌&lt;br /&gt;&lt;/h3&gt;
+&lt;p&gt;尽管“压轴”本义为倒数第二，但现代语境中常被误用作“最后一个”或“最重磅”的意思。这种用法已被部分权威词典（如《中国戏曲曲艺词典》）认可为后起义。‌&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是，《新华字典》的修订反映了这个词义的争议：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第六版《新华字典》把倒数第二个节目改为倒数第一个。&lt;/li&gt;
+&lt;li&gt;第八版《新华字典》又把倒数第一个节目改回倒数第二个（绝大多数人依然理解为倒数第一个，现多指占据份量大）。&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;那其实这么看下来，感觉日常生活中用的时候只用对了一层意思，也就是“&lt;strong&gt;由名角出演，内容最精彩，旨在留住观众&lt;/strong&gt;”。&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;我之前都是理所应当的认为最后一个出场的就是最被看重的。&lt;br /&gt;
+其实是之前追星过一段时间，做为粉的思维就是，压轴出场也就是最后一个出场的必定是最被看重的。&lt;br /&gt;&lt;/p&gt;</description></item><item><title>现在的剧宣下料都好猛啊！</title><link>https://esperanzaee.github.io/posts/wild-drama-promo-trends/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/wild-drama-promo-trends/</guid><description>&lt;p&gt;《献鱼》16号不是上了吗，那我这个无脑追剧人肯定是要去尝一下咸淡的！&lt;/p&gt;
+&lt;p&gt;然后我的小红书就开始360度无死角开始监控我，给我推这部剧的物料。&lt;/p&gt;
+&lt;p&gt;这不，立马就给我推了这些，看完之后只能感慨“下料真猛啊~”。&lt;/p&gt;
+&lt;p&gt;
+&lt;img
+ src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818143335597.jpg"
+ alt="图片1"
+ class="post-image"
+ /&gt;
+&lt;img
+ src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818143335599.jpg"
+ alt="图片2"
+ class="post-image"
+ /&gt;
+ &lt;img
+ src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818143335598.jpg"
+ alt="图片3"
+ class="post-image"
+ /&gt;
+&lt;/p&gt;</description></item><item><title>微信最烦看到亲戚的消息</title><link>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</link><pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</guid><description>&lt;p&gt;这些人完全无视边界感，无论亲疏远近，总能理直气壮地对你指手画脚！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;催婚&lt;/strong&gt;（美其名曰“为你好”）——&lt;br&gt;
+我结不结婚、什么时候结婚，关你什么事？&lt;br&gt;先管好自己家的一地鸡毛吧！&lt;/p&gt;
+&lt;img src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818103525038.jpg" style="display: block; margin: 0 auto; zoom: 80%;"&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;多给你爸妈打电话/打钱&lt;/strong&gt;（美其名曰“看不得他们苦”）——&lt;br&gt;
+我怎么和爸妈联系、给不给钱，需要你来教？&lt;br&gt;
+时时刻刻都在想着试探我赚了几个钱，你儿子是每年给你几百万了？ 自己还得打工挣钱，甚至等我过年回家借钱，怎么好意思来指点我？&lt;br&gt;
+没钱就去挣，别来我这讨，我又不是菩萨！&lt;/p&gt;
+&lt;img src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818103525036.jpg" style="display: block; margin: 0 auto; zoom: 20%;"&gt;</description></item><item><title>广东打工人的台风天</title><link>https://esperanzaee.github.io/posts/typhoon-frequency-guangdong-2025/</link><pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/typhoon-frequency-guangdong-2025/</guid><description>&lt;h3 id="天气-"&gt;天气 🌪️&lt;/h3&gt;
+&lt;p&gt;来广东快5年了，感觉今年台风天格外多！&lt;br&gt;
+上一个刚走没半个月，下一个又排队来了……&lt;br&gt;
+对台风本身没啥意见，但求下雨别卡我上下班点啊！今年已经当了好几次落汤鸡了，真的会谢 😭&lt;/p&gt;
+&lt;h3 id="工作-"&gt;工作 🔥&lt;/h3&gt;
+&lt;p&gt;我的工位是热带雨林分林吧？！今天后背都要热出蒸汽了，公司的空调是摆设吧，我真的麻了。&lt;br&gt;
+最绝的是旁边那扇窗，总有人手欠给我推开！大哥，您开的是窗吗？开的是我的怒火啊！！🔥&lt;/p&gt;
+&lt;h3 id="娱乐-"&gt;娱乐 📺&lt;/h3&gt;
+&lt;p&gt;今年追剧热情跌入低谷，10集弃剧已成常态……&lt;br&gt;
+但是但是！我比较感兴趣的《献鱼》和《子夜归》终于要播了，希望好看！
+八月终于对我好一点了，一下子来了两部我都感兴趣的剧！💃（搓手等更新.gif）&lt;/p&gt;
+&lt;p&gt;片荒时的救命清单：&lt;/p&gt;
+&lt;p&gt;《以家人之名》✨：今年循环两轮了！前半部温馨到能下三碗饭（后面糟心爸妈出场？火速快进❌）&lt;/p&gt;
+&lt;p&gt;《初恋那件小事》🍬：总体是小甜剧，唯一我觉得不足的是后期他们短暂的分开了，直到大结局才和好。&lt;/p&gt;
+&lt;p&gt;《原来你还在这里》🌸：这个剧滤镜 + bgm + 主演 都蛮好的，就整体看起来是很舒服的言情剧。&lt;/p&gt;
+&lt;p&gt;《点燃我，温暖你》🔥：哈哈哈哈，刚出的时候实时追，bgm和主角都选的刚好！&lt;/p&gt;
+&lt;p&gt;《长相思》🦊：我比较喜欢看涂山璟和小夭的cut，主要是邓为真的长得很好看，他的另一部剧“苏易水”那个角色真的360度无死角！&lt;/p&gt;
+&lt;p&gt;总结：(╯‵□′)╯︵┻━┻&lt;/p&gt;</description></item><item><title>又双孬孬长痘了......</title><link>https://esperanzaee.github.io/posts/hello_oily/</link><pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/hello_oily/</guid><description>&lt;p&gt;&lt;strong&gt;人为什么要长痘！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;还是那种大颗的、红红的痘！&lt;/p&gt;
+&lt;p&gt;每一次，它们都需要&lt;strong&gt;一周甚至更久&lt;/strong&gt;才能消下去。&lt;br&gt;
+更离谱的是——&lt;strong&gt;不长痘的间隔，比痘痘从出现到消失的时间还短&lt;/strong&gt;！&lt;br&gt;
+麻了……&lt;/p&gt;
+&lt;p&gt;以前年纪小的时候，还沾沾自喜，觉得自己&lt;strong&gt;完全不长痘&lt;/strong&gt;。&lt;br&gt;
+说真的，在开始工作之前，我的脸&lt;strong&gt;干净得离谱&lt;/strong&gt;，一颗痘都没有！&lt;/p&gt;
+&lt;p&gt;工作后的一两年，皮肤状态也还算稳定。&lt;br&gt;
+但从前年开始，痘痘&lt;strong&gt;就像突然觉醒了一样&lt;/strong&gt;，开始野蛮生长……&lt;/p&gt;
+&lt;p&gt;最气人的是，它们&lt;strong&gt;不是单兵作战，而是组团来袭&lt;/strong&gt;——
+&lt;strong&gt;长了一两颗之后，后面必定跟着好几颗&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;我看网友说，&lt;strong&gt;油皮容易长痘&lt;/strong&gt;。
+仔细一想，我的脸&lt;strong&gt;简直是大油田&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;早上洗完脸出门，中午一摸T区，手指直接反光……&lt;/strong&gt;&lt;br&gt;
+（网友说，中午的自己就是猪刚鬣，可以说非常贴切了）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;头发也是油得飞快&lt;/strong&gt;，自从剪短后，两天不洗就油腻到不能见人。&lt;br&gt;
+头发油也会导致闷痘，呵呵&amp;hellip;也是绝了，脸长痘就算了，头皮也长&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;耳朵更是重灾区&lt;/strong&gt;，油到让我彻底放弃“分享耳机”这种浪漫桥段——
+（偶像剧里男女主戴同一副耳机的画面？呵，我的耳机只配独自承受油光……）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所以，到底为什么人要长痘啊！！！&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>令人无语至极的邻居</title><link>https://esperanzaee.github.io/posts/noisy_neighbors/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/noisy_neighbors/</guid><description>&lt;h2 id="-一号"&gt;💦 一号&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;楼上邻居总在飘窗晾不拧干的衣服，有时还往外倒水，水滴滴答答打在我家窗台铁皮上，这声音听着真的非常烦。&amp;rdquo;&lt;/p&gt;
+&lt;h2 id="-二号"&gt;🚪 二号&lt;/h2&gt;
+&lt;p&gt;“隔壁情侣，一个永远不带钥匙，一个永远听不见敲门，绝配！”&lt;/p&gt;
+&lt;p&gt;女生回家总是不带钥匙，每次都在外面敲门让男生来开。&lt;br&gt;
+男生睡得跟死猪似的，半天听不见，女生就一直敲，敲得没完没了。&lt;br&gt;
+最久的一次敲了得有五分钟？我没数，但那种持续不断的敲门声真的让人很烦。&lt;/p&gt;
+&lt;p&gt;最近有了新动作，让我觉得敲门都是好的了&lt;br&gt;
+那就是每天半夜12点在那很大声的说话，还是方言（本来想说听一下为什么一直在狗叫&amp;hellip;）&lt;br&gt;
+我***&lt;/p&gt;
+&lt;h2 id="-三号"&gt;🗑️ 三号&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;住我楼上的那位，经常穿着短裤、光着膀子在楼顶晃悠。&lt;/strong&gt;&lt;br&gt;
+你可能会问：这关我什么事？&lt;br&gt;
+——问题就出在我家那只逆子猫！它特别喜欢去楼顶溜达，所以我经常被迫看到这个男的，而且他&lt;strong&gt;体味特别重&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;但这还不是最过分的！&lt;br&gt;
+&lt;strong&gt;最离谱的是，他之前下楼扔垃圾，居然直接把垃圾扔在我家门口！&lt;/strong&gt;&lt;br&gt;
+我一直以为是隔壁干的，直到垃圾堆到流臭水，忍无可忍找房东调监控——&lt;br&gt;
+&lt;strong&gt;结果发现是这个颠公！他特意走到我们这层，扔完垃圾再继续下楼！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;还有更炸裂的：&lt;/strong&gt;&lt;br&gt;
+他和他妈妈经常去楼顶坐着，&lt;strong&gt;他妈妈也就比他多穿了一件背心&lt;/strong&gt;。&lt;br&gt;
+有时候，他还会在楼顶给他妈妈抹后背的药（或者别的什么）。&lt;br&gt;
+这时候，&lt;strong&gt;我真庆幸自己近视+晚上视线模糊，看得不那么清楚……&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>iconify 图标引用</title><link>https://esperanzaee.github.io/posts/iconify-quote/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/iconify-quote/</guid><description>&lt;h3 id="访问地址拼接规则"&gt;访问地址拼接规则&lt;/h3&gt;
+&lt;p&gt;[基础结构]
+&lt;a href="https://api.iconify.design/%7Bprefix%7D:%7Bicon-name%7D.%7Bformat%7D?%7Bparameters%7D"&gt;https://api.iconify.design/{prefix}:{icon-name}.{format}?{parameters}&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;部分&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;说明&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;code&gt;api.iconify.design&lt;/code&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Iconify 官方公共 API 域名&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;code&gt;{prefix}&lt;/code&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;图标集前缀（如 cil 表示 CoreUI Icons）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;code&gt;{icon-name}&lt;/code&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;图标名称（如 dog）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;code&gt;{format}&lt;/code&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;输出格式（通常为 svg、json 等）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;code&gt;?{parameters}&lt;/code&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;可选的查询参数（如颜色、尺寸等）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;常用查询参数&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;参数&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;示例值&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;作用&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;color&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;red&lt;br /&gt;%2300ff00&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;图标颜色（支持 HEX/RGB/关键词）&lt;br /&gt;%23为#的转义&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;width / height&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;24&lt;br /&gt;1.5rem&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;尺寸（像素或 CSS 单位）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;flip&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;horizontal&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;水平/垂直翻转&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;rotate&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;90&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;旋转角度（90°/180°/270°）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;download&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;true&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;强制下载而非显示&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;颜色值可以是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HEX 格式（需转义 # → %23）：?color=&lt;code&gt;%236a86c8&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;无前缀 HEX 格式：?color=&lt;code&gt;6a86c8&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;颜色名称：?color=&lt;code&gt;blue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;RGB/A 格式：?color=&lt;code&gt;rgb(106,134,200)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://api.iconify.design/material-symbols:looks-rounded.svg?color=%236a86c8&amp;width=200" 
+style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><title>Markdown 美食食谱写作指南</title><link>https://esperanzaee.github.io/posts/markdown-syntax-guide/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/markdown-syntax-guide/</guid><description>&lt;p&gt;本指南将通过一份美味的意面食谱，向您展示如何使用 Markdown 格式化文本。让我们在学习 Markdown 语法的同时，探索美食的世界！&lt;/p&gt;
+&lt;h2 id="基础语法演示"&gt;基础语法演示&lt;/h2&gt;
+&lt;h3 id="标题级别"&gt;标题级别&lt;/h3&gt;
+&lt;p&gt;在食谱中，我们经常需要不同级别的标题来组织内容。Markdown 提供了六个级别的标题：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;# 经典蒜香培根意面
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;## 食材准备
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;### 主要食材
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;#### 调味料
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;##### 厨房用具
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;###### 小贴士
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="文本格式化"&gt;文本格式化&lt;/h3&gt;
+&lt;p&gt;在描述食谱时，我们经常需要强调某些重要的信息：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;重要步骤&lt;/strong&gt;需要加粗
+&lt;em&gt;关键时机&lt;/em&gt;使用斜体
+**&lt;em&gt;特别提示&lt;/em&gt;**同时使用粗体和斜体
+&lt;del&gt;可选步骤&lt;/del&gt;使用删除线&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**重要步骤**需要加粗
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;*关键时机*使用斜体
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**_特别提示_**同时使用粗体和斜体
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;~~可选步骤~~使用删除线
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="列表用法"&gt;列表用法&lt;/h3&gt;
+&lt;h4 id="配料清单无序列表"&gt;配料清单（无序列表）：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;意面 400克&lt;/li&gt;
+&lt;li&gt;培根 200克
+&lt;ul&gt;
+&lt;li&gt;最好是肥瘦相间的&lt;/li&gt;
+&lt;li&gt;切成小块&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;蒜末 3-4瓣&lt;/li&gt;
+&lt;li&gt;橄榄油 2汤匙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 意面 400克
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 培根 200克
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 最好是肥瘦相间的
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 切成小块
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 蒜末 3-4瓣
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 橄榄油 2汤匙
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="烹饪步骤有序列表"&gt;烹饪步骤（有序列表）：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;烧开水，加一小撮盐&lt;/li&gt;
+&lt;li&gt;加入意面，煮至八分熟&lt;/li&gt;
+&lt;li&gt;同时，准备酱汁：
+&lt;ol&gt;
+&lt;li&gt;锅中热油&lt;/li&gt;
+&lt;li&gt;炒香蒜末&lt;/li&gt;
+&lt;li&gt;加入培根翻炒&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;1.&lt;/span&gt; 烧开水，加一小撮盐
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;2.&lt;/span&gt; 加入意面，煮至八分熟
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;3.&lt;/span&gt; 同时，准备酱汁：
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;1.&lt;/span&gt; 锅中热油
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;2.&lt;/span&gt; 炒香蒜末
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;3.&lt;/span&gt; 加入培根翻炒
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="块引用"&gt;块引用&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;厨师提示：在开水中加一点橄榄油，可以防止意面粘连。&lt;/p&gt;</description></item><item><title>Test TOC, deatails and styles</title><link>https://esperanzaee.github.io/posts/test-toc-and-details/</link><pubDate>Sun, 18 Aug 2024 13:34:54 +0200</pubDate><guid>https://esperanzaee.github.io/posts/test-toc-and-details/</guid><description>&lt;h2 id="table-of-content"&gt;Table of Content&lt;/h2&gt;
+&lt;h3 id="what-it-is"&gt;What it is?&lt;/h3&gt;
+&lt;p&gt;TOC is the box you see at the very top of this post. It may be framed (or not).&lt;/p&gt;
+&lt;h3 id="how-to-enable-toc"&gt;How to enable TOC?&lt;/h3&gt;
+&lt;p&gt;To enable it, all you need to do when creating a new post at the very top is to insert the code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;toc = &lt;span style="color:#af3a03"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tocBorder = &lt;span style="color:#af3a03"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can of course find this post (../themes/nostyleplease/content/posts/test-toc-and-details.md) and open in editor to see how it&amp;rsquo;s working.&lt;/p&gt;</description></item><item><title>Test Markdown</title><link>https://esperanzaee.github.io/posts/test-markdown/</link><pubDate>Sun, 01 Jan 2023 10:28:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-markdown/</guid><description>&lt;h1 id="markdown-test-page"&gt;&lt;a name="top"&gt;&lt;/a&gt;Markdown Test Page&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#Headings"&gt;Headings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Paragraphs"&gt;Paragraphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Blockquotes"&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Lists"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Horizontal"&gt;Horizontal rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Table"&gt;Table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Code"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Inline"&gt;Inline elements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="headings"&gt;&lt;a name="Headings"&gt;&lt;/a&gt;Headings&lt;/h1&gt;
+&lt;h1 id="heading-one"&gt;Heading one&lt;/h1&gt;
+&lt;p&gt;Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt.&lt;/p&gt;
+&lt;h2 id="heading-two"&gt;Heading two&lt;/h2&gt;
+&lt;p&gt;Aute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim.&lt;/p&gt;</description></item><item><title>Test CJK</title><link>https://esperanzaee.github.io/posts/test-cjk/</link><pubDate>Fri, 26 Aug 2022 22:30:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-cjk/</guid><description>&lt;h3 id="1-简体中文测试"&gt;1. 简体中文测试&lt;/h3&gt;
+&lt;p&gt;秋，夜，王趺坐收银台前，篝灯如吠。明灭之际有兽前来采购：鹿角虎爪，云雾缭绕，眼睛碧绿如同玻璃；店中不见生人已久。坐，齿轮捻动，肩胛慢慢松弛，衣袖如瓷。在货架之间，忘记面孔的人有迷失的风险。一份白色，我有天空中游动穿过云的骨。一份蓝色，有雨水溅落金属制品间的空气。绿色，有薄而冰凉至温润的指甲。黑色有窗外随风沙沙的水草。兽狡黠，想必没有红色。王赧然，有常住仓库，深居简出，肥而不腻的三文鱼。颜色，声音，温度，气味，这一切尽可落在你一人身上。但，让我与你的眼睛对饮一杯。所以熬煮越来越粘稠的空气，坛中有清冽，眼前有孤灯，然后让身体舒展沉浮。兽目睹这一切，嘴微张，牙齿柔软，荧光微微。第二天，王尚未醒来，脸上躺着一枚红叶，身体轻轻摇晃。&lt;/p&gt;
+&lt;p&gt;From &lt;a href="https://hanwen.one/pne/%E4%BE%BF%E5%88%A9%E5%BA%97%E4%B9%8B%E7%8E%8B/"&gt;便利店之王&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="2-繁体中文测试"&gt;2. 繁体中文测试&lt;/h3&gt;
+&lt;p&gt;善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。&lt;/p&gt;
+&lt;p&gt;以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？&lt;/p&gt;
+&lt;p&gt;就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。&lt;/p&gt;
+&lt;p&gt;國新故。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;From &lt;a href="http://www.richyli.com/tool/loremipsum/"&gt;亂數假文產生器 - Chinese Lorem Ipsum.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="3-日本語テスト"&gt;3. 日本語テスト&lt;/h3&gt;
+&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。
+最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。
+がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
+&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
+&lt;p&gt;From &lt;a href="http://lipsum.sugutsukaeru.jp/index.cgi"&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="4-한국어-예문"&gt;4. 한국어 예문&lt;/h3&gt;
+&lt;p&gt;국가원로자문회의의 의장은 직전대통령이 된다. 다만, 직전대통령이 없을 때에는 대통령이 지명한다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 국가는 노인과 청소년의 복지향상을 위한 정책을 실시할 의무를 진다. 학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은 법률로 정한다.&lt;/p&gt;</description></item><item><title>Test Highlight</title><link>https://esperanzaee.github.io/posts/test-highlight/</link><pubDate>Fri, 26 Aug 2022 22:29:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-highlight/</guid><description>&lt;h2 id="test-for-c"&gt;Test for C&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-c" data-lang="c"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;#define UNICODE
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;#include&lt;/span&gt; &lt;span style="color:#427b58;font-style:italic"&gt;&amp;lt;windows.h&amp;gt;&lt;/span&gt;&lt;span style="color:#427b58"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;int&lt;/span&gt; &lt;span style="color:#b57614"&gt;main&lt;/span&gt;(&lt;span style="color:#b57614"&gt;int&lt;/span&gt; argc, &lt;span style="color:#b57614"&gt;char&lt;/span&gt; &lt;span style="color:#af3a03"&gt;**&lt;/span&gt;argv) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;int&lt;/span&gt; speed &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;, speed1 &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;, speed2 &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;; &lt;span style="color:#928374;font-style:italic"&gt;// 1-20
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;&lt;/span&gt; &lt;span style="color:#b57614"&gt;printf&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#34;Set Mouse Speed by Maverick&lt;/span&gt;&lt;span style="color:#79740e"&gt;\n&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;SystemParametersInfo&lt;/span&gt;(SPI_GETMOUSESPEED, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;&amp;amp;&lt;/span&gt;speed, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;printf&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#34;Current speed: %2d&lt;/span&gt;&lt;span style="color:#79740e"&gt;\n&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;, speed);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; (argc &lt;span style="color:#af3a03"&gt;==&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;) &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; (argc &lt;span style="color:#af3a03"&gt;&amp;gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;2&lt;/span&gt;) &lt;span style="color:#b57614"&gt;sscanf&lt;/span&gt;(argv[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;], &lt;span style="color:#79740e"&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;&amp;amp;&lt;/span&gt;speed1);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; (argc &lt;span style="color:#af3a03"&gt;&amp;gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;3&lt;/span&gt;) &lt;span style="color:#b57614"&gt;sscanf&lt;/span&gt;(argv[&lt;span style="color:#8f3f71"&gt;2&lt;/span&gt;], &lt;span style="color:#79740e"&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;&amp;amp;&lt;/span&gt;speed2);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; (argc &lt;span style="color:#af3a03"&gt;==&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;2&lt;/span&gt;) &lt;span style="color:#928374;font-style:italic"&gt;// set speed to first value
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;&lt;/span&gt; speed &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; speed1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;else&lt;/span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; (speed &lt;span style="color:#af3a03"&gt;==&lt;/span&gt; speed1 &lt;span style="color:#af3a03"&gt;||&lt;/span&gt; speed &lt;span style="color:#af3a03"&gt;==&lt;/span&gt; speed2) &lt;span style="color:#928374;font-style:italic"&gt;// alternate
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;&lt;/span&gt; speed &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; speed1 &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; speed2 &lt;span style="color:#af3a03"&gt;-&lt;/span&gt; speed;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; speed &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; speed1; &lt;span style="color:#928374;font-style:italic"&gt;// start with first value
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;SystemParametersInfo&lt;/span&gt;(SPI_SETMOUSESPEED, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;, speed, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;SystemParametersInfo&lt;/span&gt;(SPI_GETMOUSESPEED, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;&amp;amp;&lt;/span&gt;speed, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;printf&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#34;New speed: %2d&lt;/span&gt;&lt;span style="color:#79740e"&gt;\n&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;, speed);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-java"&gt;Test for Java&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; java.util.Map;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; java.util.TreeSet;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;public&lt;/span&gt; &lt;span style="color:#af3a03"&gt;class&lt;/span&gt; GetEnv {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#928374;font-style:italic"&gt;/**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt; * let&amp;#39;s test generics
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt; * @param args the command line arguments
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt; */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;public&lt;/span&gt; &lt;span style="color:#af3a03"&gt;static&lt;/span&gt; &lt;span style="color:#b57614"&gt;void&lt;/span&gt; &lt;span style="color:#b57614"&gt;main&lt;/span&gt;(String&lt;span style="color:#af3a03"&gt;[]&lt;/span&gt; args) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#928374;font-style:italic"&gt;// get a map of environment variables&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Map&lt;span style="color:#af3a03"&gt;&amp;lt;&lt;/span&gt;String, String&lt;span style="color:#af3a03"&gt;&amp;gt;&lt;/span&gt; env &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; System.&lt;span style="color:#79740e;font-weight:bold"&gt;getenv&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#928374;font-style:italic"&gt;// build a sorted set out of the keys and iterate&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;for&lt;/span&gt;(String k: &lt;span style="color:#af3a03"&gt;new&lt;/span&gt; TreeSet&lt;span style="color:#af3a03"&gt;&amp;lt;&lt;/span&gt;String&lt;span style="color:#af3a03"&gt;&amp;gt;&lt;/span&gt;(env.&lt;span style="color:#79740e;font-weight:bold"&gt;keySet&lt;/span&gt;())) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#79740e;font-weight:bold"&gt;out&lt;/span&gt;.&lt;span style="color:#79740e;font-weight:bold"&gt;printf&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#34;%s = %s\n&amp;#34;&lt;/span&gt;, k, env.&lt;span style="color:#79740e;font-weight:bold"&gt;get&lt;/span&gt;(k));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; } 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-perl"&gt;Test for Perl&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-perl" data-lang="perl"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;#!perl -w&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;# Time-stamp: &amp;lt;2002/04/06, 13:12:13 (EST), maverick, csvformat.pl&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;# Two pass CSV file to table formatter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$delim &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; $#ARGV &lt;span style="color:#af3a03"&gt;&amp;gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;1&lt;/span&gt; ? $ARGV[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;] : &lt;span style="color:#79740e"&gt;&amp;#39;,&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;print&lt;/span&gt; &lt;span style="color:#b57614"&gt;STDERR&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;Split pattern: $delim\n&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;# first pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;open&lt;/span&gt; F, &lt;span style="color:#79740e"&gt;&amp;#34;&amp;lt;$ARGV[0]&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;or&lt;/span&gt; &lt;span style="color:#b57614"&gt;die&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;while&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;lt;F&amp;gt;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;chomp&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; $i &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;map&lt;/span&gt; { $max[$_&lt;span style="color:#af3a03"&gt;-&amp;gt;&lt;/span&gt;[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;]] &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; $_&lt;span style="color:#af3a03"&gt;-&amp;gt;&lt;/span&gt;[&lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;] &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; $_&lt;span style="color:#af3a03"&gt;-&amp;gt;&lt;/span&gt;[&lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;] &lt;span style="color:#af3a03"&gt;&amp;gt;&lt;/span&gt; ($max[$_&lt;span style="color:#af3a03"&gt;-&amp;gt;&lt;/span&gt;[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;]] &lt;span style="color:#af3a03"&gt;||&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; (&lt;span style="color:#b57614"&gt;map&lt;/span&gt; {[&lt;span style="color:#b57614"&gt;length&lt;/span&gt; $_, $i&lt;span style="color:#af3a03"&gt;++&lt;/span&gt;]} &lt;span style="color:#b57614"&gt;split&lt;/span&gt;($delim));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;close&lt;/span&gt; F;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;print&lt;/span&gt; &lt;span style="color:#b57614"&gt;STDERR&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#39;Field width: &amp;#39;&lt;/span&gt;, &lt;span style="color:#b57614"&gt;join&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;, @max), &lt;span style="color:#79740e"&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;print&lt;/span&gt; &lt;span style="color:#b57614"&gt;STDERR&lt;/span&gt; &lt;span style="color:#b57614"&gt;join&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#39; &amp;#39;&lt;/span&gt;, &lt;span style="color:#b57614"&gt;map&lt;/span&gt; {&lt;span style="color:#79740e"&gt;&amp;#39;-&amp;#39;&lt;/span&gt; x $_} @max);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;# second pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;open&lt;/span&gt; F, &lt;span style="color:#79740e"&gt;&amp;#34;&amp;lt;$ARGV[0]&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;or&lt;/span&gt; &lt;span style="color:#b57614"&gt;die&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;while&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;lt;F&amp;gt;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;chomp&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; $i &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;map&lt;/span&gt; { &lt;span style="color:#b57614"&gt;printf&lt;/span&gt;(&lt;span style="color:#79740e"&gt;&amp;#34;%-$max[$_-&amp;gt;[1]]s &amp;#34;&lt;/span&gt;, $_&lt;span style="color:#af3a03"&gt;-&amp;gt;&lt;/span&gt;[&lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;]) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; (&lt;span style="color:#b57614"&gt;map&lt;/span&gt; {[$_, $i&lt;span style="color:#af3a03"&gt;++&lt;/span&gt;]} &lt;span style="color:#b57614"&gt;split&lt;/span&gt;($delim));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;print&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;close&lt;/span&gt; F;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-python"&gt;Test for Python&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;# test python (sample from offlineimap)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;class&lt;/span&gt; ExitNotifyThread(Thread):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&amp;#34;This class is designed to alert a &amp;#34;monitor&amp;#34; to the fact that a thread has
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; exited and to provide for the ability for it to find out why.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;run&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;global&lt;/span&gt; exitthreads, profiledir
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;threadid &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; thread&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;get_ident()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; &lt;span style="color:#af3a03"&gt;not&lt;/span&gt; profiledir: &lt;span style="color:#928374;font-style:italic"&gt;# normal case&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Thread&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;run(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;import&lt;/span&gt; cProfile &lt;span style="color:#af3a03"&gt;as&lt;/span&gt; profile
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;except&lt;/span&gt; &lt;span style="color:#fb4934"&gt;ImportError&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;import&lt;/span&gt; profile
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; prof &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; profile&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;Profile()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; prof &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; prof&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;runctx(&lt;span style="color:#79740e"&gt;&amp;#34;Thread.run(self)&amp;#34;&lt;/span&gt;, &lt;span style="color:#b57614"&gt;globals&lt;/span&gt;(), &lt;span style="color:#b57614"&gt;locals&lt;/span&gt;())
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;except&lt;/span&gt; &lt;span style="color:#fb4934"&gt;SystemExit&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; prof&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;dump_stats( \
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; profiledir &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;/&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; &lt;span style="color:#b57614"&gt;str&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;threadid) &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;_&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; \
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;getName() &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;.prof&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;except&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;setExitCause(&lt;span style="color:#79740e"&gt;&amp;#39;EXCEPTION&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; sys:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;setExitException(sys&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exc_info()[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tb &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; traceback&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;format_exc()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;setExitStackTrace(tb)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;setExitCause(&lt;span style="color:#79740e"&gt;&amp;#39;NORMAL&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; &lt;span style="color:#af3a03"&gt;not&lt;/span&gt; &lt;span style="color:#b57614"&gt;hasattr&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;, &lt;span style="color:#79740e"&gt;&amp;#39;exitmessage&amp;#39;&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;setExitMessage(&lt;span style="color:#af3a03"&gt;None&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; exitthreads:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; exitthreads&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;put(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;True&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;setExitCause&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;, cause):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitcause &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; cause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;getExitCause&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&amp;#34;Returns the cause of the exit, one of:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; &amp;#39;EXCEPTION&amp;#39; -- the thread aborted because of an exception
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; &amp;#39;NORMAL&amp;#39; -- normal termination.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitcause
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;setExitException&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;, exc):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitexception &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; exc
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;getExitException&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&amp;#34;If getExitCause() is &amp;#39;EXCEPTION&amp;#39;, holds the value from
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; sys.exc_info()[1] for this exception.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitexception
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;setExitStackTrace&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;, st):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitstacktrace &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; st
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;getExitStackTrace&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&amp;#34;If getExitCause() is &amp;#39;EXCEPTION&amp;#39;, returns a string representing
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; the stack trace for this exception.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitstacktrace
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;setExitMessage&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;, msg):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&amp;#34;Sets the exit message to be fetched by a subsequent call to
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; getExitMessage. This message may be any object or type except
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; None.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitmessage &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; msg
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;def&lt;/span&gt; &lt;span style="color:#b57614"&gt;getExitMessage&lt;/span&gt;(&lt;span style="color:#b57614"&gt;self&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&amp;#34;For any exit cause, returns the message previously set by
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; a call to setExitMessage(), or None if there was no such message
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt; set.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; &lt;span style="color:#b57614"&gt;self&lt;/span&gt;&lt;span style="color:#af3a03"&gt;.&lt;/span&gt;exitmessage
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-bash"&gt;Test for Bash&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;&lt;/span&gt;&lt;span style="color:#b57614"&gt;cd&lt;/span&gt; $ROOT_DIR
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;DOT_FILES&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;lastpass weechat ssh Xauthority&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;for&lt;/span&gt; dotfile in $DOT_FILES; &lt;span style="color:#af3a03"&gt;do&lt;/span&gt; conform_link &lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;$DATA_DIR&lt;span style="color:#79740e"&gt;/&lt;/span&gt;$dotfile&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;.&lt;/span&gt;$dotfile&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;; &lt;span style="color:#af3a03"&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;# TODO: refactor with suffix variables (or common cron values)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;case&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;$PLATFORM&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt; in
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; linux&lt;span style="color:#af3a03"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#928374;font-style:italic"&gt;#conform_link &amp;#34;$CONF_DIR/shell/zshenv&amp;#34; &amp;#34;.zshenv&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; crontab -l &amp;gt; $ROOT_DIR/tmp/crontab-conflict-arch
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#b57614"&gt;cd&lt;/span&gt; $ROOT_DIR/$CONF_DIR/cron
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;if&lt;/span&gt; &lt;span style="color:#af3a03"&gt;[[&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#af3a03"&gt;$(&lt;/span&gt;diff ~/tmp/crontab-conflict-arch crontab-current-arch&lt;span style="color:#af3a03"&gt;)&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;==&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;]]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;then&lt;/span&gt; &lt;span style="color:#928374;font-style:italic"&gt;# no difference with current backup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; logger &lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;$LOG_PREFIX&lt;span style="color:#79740e"&gt;: crontab live settings match stored &amp;#34;&lt;/span&gt;&lt;span style="color:#79740e"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt;&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;settings; no restore required&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; rm ~/tmp/crontab-conflict-arch
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;else&lt;/span&gt; &lt;span style="color:#928374;font-style:italic"&gt;# current crontab settings in file do not match live settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; crontab $ROOT_DIR/$CONF_DIR/cron/crontab-current-arch
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; logger &lt;span style="color:#79740e"&gt;&amp;#34;&lt;/span&gt;$LOG_PREFIX&lt;span style="color:#79740e"&gt;: crontab stored settings conflict with &amp;#34;&lt;/span&gt;&lt;span style="color:#79740e"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt;&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;live settings; stored settings restored. &amp;#34;&lt;/span&gt;&lt;span style="color:#79740e"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e"&gt;&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;Previous settings recorded in ~/tmp/crontab-conflict-arch.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-haskell"&gt;Test for Haskell&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-haskell" data-lang="haskell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;{-# LANGUAGE OverloadedStrings #-}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;module&lt;/span&gt; Main &lt;span style="color:#af3a03"&gt;where&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;--import Prelude hiding (id)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;--import Control.Category (id)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; Control.Arrow ((&lt;span style="color:#af3a03"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;), (&lt;span style="color:#af3a03"&gt;***&lt;/span&gt;), &lt;span style="color:#b57614"&gt;arr&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; Control.Monad (&lt;span style="color:#b57614"&gt;forM_&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;-- import Data.Monoid (mempty, mconcat)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;-- import System.FilePath&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; Hakyll
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;main&lt;/span&gt; &lt;span style="color:#af3a03"&gt;::&lt;/span&gt; &lt;span style="color:#b57614"&gt;IO&lt;/span&gt; &lt;span style="color:#b57614"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;main&lt;/span&gt; &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; hakyll &lt;span style="color:#af3a03"&gt;$&lt;/span&gt; &lt;span style="color:#af3a03"&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; route &lt;span style="color:#79740e"&gt;&amp;#34;css/*&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;$&lt;/span&gt; setExtension &lt;span style="color:#79740e"&gt;&amp;#34;css&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; compile &lt;span style="color:#79740e"&gt;&amp;#34;css/*&amp;#34;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;$&lt;/span&gt; byExtension (&lt;span style="color:#fb4934"&gt;error&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;Not a (S)CSS file&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; [ (&lt;span style="color:#79740e"&gt;&amp;#34;.css&amp;#34;&lt;/span&gt;, compressCssCompiler)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; , (&lt;span style="color:#79740e"&gt;&amp;#34;.scss&amp;#34;&lt;/span&gt;, sass)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; route &lt;span style="color:#79740e"&gt;&amp;#34;js/**&amp;#34;&lt;/span&gt; idRoute
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; compile &lt;span style="color:#79740e"&gt;&amp;#34;js/**&amp;#34;&lt;/span&gt; copyFileCompiler
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; route &lt;span style="color:#79740e"&gt;&amp;#34;img/*&amp;#34;&lt;/span&gt; idRoute
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; compile &lt;span style="color:#79740e"&gt;&amp;#34;img/*&amp;#34;&lt;/span&gt; copyFileCompiler
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; compile &lt;span style="color:#79740e"&gt;&amp;#34;templates/*&amp;#34;&lt;/span&gt; templateCompiler
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; forM_ [&lt;span style="color:#79740e"&gt;&amp;#34;test.md&amp;#34;&lt;/span&gt;, &lt;span style="color:#79740e"&gt;&amp;#34;index.md&amp;#34;&lt;/span&gt;] &lt;span style="color:#af3a03"&gt;$&lt;/span&gt; &lt;span style="color:#b57614"&gt;\&lt;/span&gt;page &lt;span style="color:#af3a03"&gt;-&amp;gt;&lt;/span&gt; &lt;span style="color:#af3a03"&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; route page &lt;span style="color:#af3a03"&gt;$&lt;/span&gt; setExtension &lt;span style="color:#79740e"&gt;&amp;#34;html&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; compile page &lt;span style="color:#af3a03"&gt;$&lt;/span&gt; pageCompiler
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; applyTemplateCompiler &lt;span style="color:#79740e"&gt;&amp;#34;templates/default.html&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; relativizeUrlsCompiler
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;sass&lt;/span&gt; &lt;span style="color:#af3a03"&gt;::&lt;/span&gt; &lt;span style="color:#b57614"&gt;Compiler&lt;/span&gt; &lt;span style="color:#b57614"&gt;Resource&lt;/span&gt; &lt;span style="color:#b57614"&gt;String&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#b57614"&gt;sass&lt;/span&gt; &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; getResourceString &lt;span style="color:#af3a03"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; unixFilter &lt;span style="color:#79740e"&gt;&amp;#34;sass&amp;#34;&lt;/span&gt; [&lt;span style="color:#79740e"&gt;&amp;#34;-s&amp;#34;&lt;/span&gt;, &lt;span style="color:#79740e"&gt;&amp;#34;--scss&amp;#34;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; arr compressCss
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-php"&gt;Test for PHP&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-php" data-lang="php"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;&amp;lt;?&lt;/span&gt;php
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;require_once&lt;/span&gt;($GLOBALS[&lt;span style="color:#79740e"&gt;&amp;#39;g_campsiteDir&amp;#39;&lt;/span&gt;]&lt;span style="color:#af3a03"&gt;.&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;/&lt;/span&gt;&lt;span style="color:#79740e"&gt;$ADMIN_DIR&lt;/span&gt;&lt;span style="color:#79740e"&gt;/country/common.php&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;require_once&lt;/span&gt;($GLOBALS[&lt;span style="color:#79740e"&gt;&amp;#39;g_campsiteDir&amp;#39;&lt;/span&gt;]&lt;span style="color:#af3a03"&gt;.&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;/classes/SimplePager.php&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;camp_load_translation_strings(&lt;span style="color:#79740e"&gt;&amp;#34;api&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$f_country_language_selected &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; camp_session_get(&lt;span style="color:#79740e"&gt;&amp;#39;f_language_selected&amp;#39;&lt;/span&gt;, &lt;span style="color:#79740e"&gt;&amp;#39;&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$f_country_offset &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; camp_session_get(&lt;span style="color:#79740e"&gt;&amp;#39;f_country_offset&amp;#39;&lt;/span&gt;, &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;if&lt;/span&gt; (&lt;span style="color:#af3a03"&gt;empty&lt;/span&gt;($f_country_language_selected)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; $f_country_language_selected &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#af3a03"&gt;null&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ItemsPerPage &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;20&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$languages &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; Language&lt;span style="color:#af3a03"&gt;::&lt;/span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;GetLanguages&lt;/span&gt;(&lt;span style="color:#af3a03"&gt;null&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;null&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;null&lt;/span&gt;, &lt;span style="color:#af3a03"&gt;array&lt;/span&gt;(), &lt;span style="color:#af3a03"&gt;array&lt;/span&gt;(), &lt;span style="color:#af3a03"&gt;true&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$numCountries &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; Country&lt;span style="color:#af3a03"&gt;::&lt;/span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;GetNumCountries&lt;/span&gt;($f_country_language_selected);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$pager &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#af3a03"&gt;new&lt;/span&gt; SimplePager($numCountries, $ItemsPerPage, &lt;span style="color:#79740e"&gt;&amp;#34;index.php?&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$crumbs &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#af3a03"&gt;array&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$crumbs[] &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#af3a03"&gt;array&lt;/span&gt;(getGS(&lt;span style="color:#79740e"&gt;&amp;#34;Configure&amp;#34;&lt;/span&gt;), &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$crumbs[] &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#af3a03"&gt;array&lt;/span&gt;(getGS(&lt;span style="color:#79740e"&gt;&amp;#34;Countries&amp;#34;&lt;/span&gt;), &lt;span style="color:#79740e"&gt;&amp;#34;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;echo&lt;/span&gt; camp_html_breadcrumbs($crumbs);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;?php if ($g_user-&amp;gt;hasPermission(&amp;#34;ManageCountries&amp;#34;)) { ?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;table BORDER=&amp;#34;0&amp;#34; CELLSPACING=&amp;#34;0&amp;#34; CELLPADDING=&amp;#34;1&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;tr&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;td&amp;gt;&amp;lt;a href=&amp;#34;add.php&amp;#34;&amp;gt;&amp;lt;?php putGS(&amp;#34;Add new&amp;#34;); ?&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/tr&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/table&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-javascript"&gt;Test for Javascript&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; isTypedArray from &lt;span style="color:#79740e"&gt;&amp;#39;lodash/isTypedArray&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; reverse from &lt;span style="color:#79740e"&gt;&amp;#39;lodash/reverse&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; sortBy from &lt;span style="color:#79740e"&gt;&amp;#39;lodash/sortBy&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; take from &lt;span style="color:#79740e"&gt;&amp;#39;lodash/take&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;import&lt;/span&gt; { food101Classes } from &lt;span style="color:#79740e"&gt;&amp;#39;./food101&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;export&lt;/span&gt; &lt;span style="color:#af3a03"&gt;function&lt;/span&gt; food101topK(classProbabilities, k &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;5&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;const&lt;/span&gt; probs &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; isTypedArray(classProbabilities)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;?&lt;/span&gt; &lt;span style="color:#b57614"&gt;Array&lt;/span&gt;.prototype.slice.call(classProbabilities)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;:&lt;/span&gt; classProbabilities;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;const&lt;/span&gt; sorted &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; reverse(
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sortBy(
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; probs.map((prob, index) =&amp;gt; [ prob, index ]),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; probIndex =&amp;gt; probIndex[&lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; )
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; );
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;const&lt;/span&gt; topK &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; take(sorted, k).map(probIndex =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;const&lt;/span&gt; iClass &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; food101Classes[probIndex[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;]];
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; id&lt;span style="color:#af3a03"&gt;:&lt;/span&gt; probIndex[&lt;span style="color:#8f3f71"&gt;1&lt;/span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; name&lt;span style="color:#af3a03"&gt;:&lt;/span&gt; iClass.replace(&lt;span style="color:#79740e"&gt;/_/&lt;/span&gt;, &lt;span style="color:#79740e"&gt;&amp;#39; &amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; probability&lt;span style="color:#af3a03"&gt;:&lt;/span&gt; probIndex[&lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; };
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;return&lt;/span&gt; topK;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-html"&gt;Test for HTML&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#427b58"&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;#34;-//W3C//DTD HTML 4.01 Transitional//EN&amp;#34;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;html&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style="color:#9d0006"&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;title&lt;/span&gt;&amp;gt;A Tiny Page&amp;lt;/&lt;span style="color:#9d0006"&gt;title&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;style&lt;/span&gt; &lt;span style="color:#79740e;font-weight:bold"&gt;type&lt;/span&gt;&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;&amp;lt;!&lt;/span&gt;&lt;span style="color:#9d0006"&gt;--&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#9d0006"&gt;p&lt;/span&gt; { &lt;span style="color:#af3a03"&gt;font-size&lt;/span&gt;:&lt;span style="color:#8f3f71"&gt;15&lt;/span&gt;&lt;span style="color:#b57614"&gt;pt&lt;/span&gt;; &lt;span style="color:#af3a03"&gt;color&lt;/span&gt;:&lt;span style="color:#8f3f71"&gt;#000&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#9d0006"&gt;--&lt;/span&gt;&lt;span style="color:#af3a03"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#9d0006"&gt;style&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#9d0006"&gt;head&lt;/span&gt;&amp;gt;&lt;span style="color:#928374;font-style:italic"&gt;&amp;lt;!-- real comment --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;body&lt;/span&gt; &lt;span style="color:#79740e;font-weight:bold"&gt;bgcolor&lt;/span&gt;&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;#FFFFFF&amp;#34;&lt;/span&gt; &lt;span style="color:#79740e;font-weight:bold"&gt;text&lt;/span&gt;&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;#000000&amp;#34;&lt;/span&gt; &lt;span style="color:#79740e;font-weight:bold"&gt;link&lt;/span&gt;&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;#0000CC&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;script&lt;/span&gt; &lt;span style="color:#79740e;font-weight:bold"&gt;language&lt;/span&gt;&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt; &lt;span style="color:#79740e;font-weight:bold"&gt;type&lt;/span&gt;&lt;span style="color:#af3a03"&gt;=&lt;/span&gt;&lt;span style="color:#79740e"&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;function&lt;/span&gt; changeHeight(h) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;var&lt;/span&gt; tds &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#b57614"&gt;document&lt;/span&gt;.getElementsByTagName(&lt;span style="color:#79740e"&gt;&amp;#34;td&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;for&lt;/span&gt;(&lt;span style="color:#af3a03"&gt;var&lt;/span&gt; i &lt;span style="color:#af3a03"&gt;=&lt;/span&gt; &lt;span style="color:#8f3f71"&gt;0&lt;/span&gt;; i &lt;span style="color:#af3a03"&gt;&amp;lt;&lt;/span&gt; tds.length; i&lt;span style="color:#af3a03"&gt;++&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tds[i].setAttribute(&lt;span style="color:#79740e"&gt;&amp;#34;height&amp;#34;&lt;/span&gt;, h &lt;span style="color:#af3a03"&gt;+&lt;/span&gt; &lt;span style="color:#79740e"&gt;&amp;#34;px&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#9d0006"&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;h1&lt;/span&gt;&amp;gt;abc&amp;lt;/&lt;span style="color:#9d0006"&gt;h1&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;h2&lt;/span&gt;&amp;gt;def&amp;lt;/&lt;span style="color:#9d0006"&gt;h2&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#9d0006"&gt;p&lt;/span&gt;&amp;gt;Testing page&amp;lt;/&lt;span style="color:#9d0006"&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#9d0006"&gt;body&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style="color:#9d0006"&gt;html&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="test-for-css"&gt;Test for CSS&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;Monokai style - ported by Luigi Maselli - http://grigio.org
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#928374;font-style:italic"&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;display&lt;/span&gt;: &lt;span style="color:#af3a03"&gt;block&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;overflow-x&lt;/span&gt;: &lt;span style="color:#af3a03"&gt;auto&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;padding&lt;/span&gt;: &lt;span style="color:#8f3f71"&gt;0.5&lt;/span&gt;&lt;span style="color:#b57614"&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;background&lt;/span&gt;: &lt;span style="color:#8f3f71"&gt;#272822&lt;/span&gt;; &lt;span style="color:#af3a03"&gt;color&lt;/span&gt;: &lt;span style="color:#8f3f71"&gt;#ddd&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-tag&lt;span style="color:#af3a03"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-keyword&lt;span style="color:#af3a03"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-selector-tag&lt;span style="color:#af3a03"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-literal&lt;span style="color:#af3a03"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-strong&lt;span style="color:#af3a03"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-name {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;color&lt;/span&gt;: &lt;span style="color:#8f3f71"&gt;#f92672&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-code {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;color&lt;/span&gt;: &lt;span style="color:#8f3f71"&gt;#66d9ef&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.hljs-class .hljs-title {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;color&lt;/span&gt;: &lt;span style="color:#af3a03"&gt;white&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Test Tex</title><link>https://esperanzaee.github.io/posts/test-tex/</link><pubDate>Fri, 26 Aug 2022 22:28:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-tex/</guid><description>&lt;p&gt;Inline math: &lt;span&gt;
+\(\varphi\)
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;Displayed math:
+&lt;span&gt;
+$$\begin{aligned}
+\varphi &amp;amp;\Rightarrow \psi \\
+\varnothing &amp;amp;\rightarrow A
+\end{aligned}$$
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;$$
+R_{\mu \nu} - {1 \over 2}g_{\mu \nu},R + g_{\mu \nu} \Lambda
+= {8 \pi G \over c^4} T_{\mu \nu}
+$$&lt;/p&gt;
+&lt;p&gt;The equation $$(x_i \cdot x_j)^2$$ is called kernel function and is often written as $$k(x_i, x_j)$$.&lt;/p&gt;
+&lt;p&gt;$$
+\arg\max_\alpha \sum_j \alpha_j - \frac{1}{2} \sum_{j,k} \alpha_j, \alpha_k y_j y_k (x_j \cdot x_k)
+$$&lt;/p&gt;
+&lt;p&gt;$$
+f(X) = \frac{1}{(2\pi)^{\frac{n}{2} |\Sigma|^{\frac{1}{2}}}} e^{ - \frac{1}{2} (X - \mu)^T \Sigma^{-1} (X - \mu)}
+$$&lt;/p&gt;</description></item><item><title>headings and toc</title><link>https://esperanzaee.github.io/posts/2020-07-09-post-example-with-headings-and-toc/</link><pubDate>Thu, 09 Jul 2020 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2020-07-09-post-example-with-headings-and-toc/</guid><description>&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-start"&gt;The start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-middle"&gt;The middle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-end"&gt;The end&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Nunc a egestas tortor, sed feugiat leo. Vestibulum porta tincidunt tellus, vitae ornare tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nunc neque, tempor in iaculis non, faucibus et metus. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;</description></item><item><title>hr</title><link>https://esperanzaee.github.io/posts/2020-07-09-post-example-with-hr/</link><pubDate>Thu, 09 Jul 2020 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2020-07-09-post-example-with-hr/</guid><description>&lt;p&gt;Lorem ipsum&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis. Sed consectetur, nisl et semper laoreet, velit augue congue nunc, eget eleifend odio erat eu sapien. Phasellus dictum efficitur dapibus. Morbi porta lacinia tincidunt. Nam aliquet est mi, nec lacinia ipsum elementum sed. Nam feugiat ipsum tortor, et pretium purus sollicitudin et.&lt;/p&gt;</description></item><item><title>Language Tests</title><link>https://esperanzaee.github.io/posts/2020-07-08-language-tests/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2020-07-08-language-tests/</guid><description>&lt;p&gt;Note: I took this test post from &lt;a href="https://github.com/huangyz0918/moving"&gt;moving&lt;/a&gt;, which is another Jekyll theme which is better that this one so I should not have linked it because now you will decide to use it instead of mine.&lt;/p&gt;
+&lt;h3 id="1-日本語テスト"&gt;1. 日本語テスト&lt;/h3&gt;
+&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.&lt;/p&gt;
+&lt;p&gt;私は昨日ついにその助力家というのの上よりするたなけれ。
+最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。
+がたを知っないはずも同時に九月をいよいよたありた。&lt;/p&gt;
+&lt;p&gt;もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たうませないが、この次第も私か兄具合に使うて、槙さんののに当人のあなたにさぞご意味と行くて私個人が小尊敬を聴いように同時に同反抗に集っだうて、いよいよまず相当へあっうからいだ事をしでなけれ。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;それでそれでもご時日をしはずはたったいやと突き抜けるますて、その元がは行ったてという獄を尽すていけですた。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;この中道具の日その学校はあなたごろがすまなりかとネルソンさんの考えるですん、辺の事実ないというご盲従ありたですと、爺さんのためが薬缶が結果までの箸の当時してならて、多少の十月にためからそういう上からとにかくしましないと触れべきものたで、ないうですと多少お人達したのでたた。&lt;/p&gt;
+&lt;p&gt;From &lt;a href="http://lipsum.sugutsukaeru.jp/index.cgi"&gt;すぐ使えるダミーテキスト - 日本語 Lorem ipsum.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="2-繁体中文测试"&gt;2. 繁体中文测试&lt;/h3&gt;
+&lt;p&gt;This is a chinese test post to show you how chinese is displayed.&lt;/p&gt;</description></item><item><title>very very very long title and very very very short content</title><link>https://esperanzaee.github.io/posts/2020-07-08-very-very-very-long-title-and-very-very-very-short-content/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2020-07-08-very-very-very-long-title-and-very-very-very-short-content/</guid><description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus. Nullam vestibulum metus eu purus malesuada, volutpat mattis leo facilisis.&lt;/p&gt;</description></item><item><title>overview</title><link>https://esperanzaee.github.io/posts/2020-07-07-overview-post/</link><pubDate>Tue, 07 Jul 2020 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2020-07-07-overview-post/</guid><description>&lt;p&gt;Lorem ipsum&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.&lt;/p&gt;
+&lt;h1 id="sample-heading-1"&gt;Sample heading 1&lt;/h1&gt;
+&lt;h2 id="sample-heading-2"&gt;Sample heading 2&lt;/h2&gt;
+&lt;h3 id="sample-heading-3"&gt;Sample heading 3&lt;/h3&gt;
+&lt;h4 id="sample-heading-4"&gt;Sample heading 4&lt;/h4&gt;
+&lt;h5 id="sample-heading-5"&gt;Sample heading 5&lt;/h5&gt;
+&lt;h6 id="sample-heading-6"&gt;Sample heading 6&lt;/h6&gt;
+&lt;p&gt;Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.&lt;/p&gt;</description></item></channel></rss>
