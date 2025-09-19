@@ -299,7 +299,27 @@ jobs:
 &lt;li&gt;RGB/A 格式：?color=&lt;code&gt;rgb(106,134,200)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src="https://api.iconify.design/material-symbols:looks-rounded.svg?color=%236a86c8&amp;width=200" 
-style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><title>Markdown 美食食谱写作指南</title><link>https://esperanzaee.github.io/posts/markdown-syntax-guide/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/markdown-syntax-guide/</guid><description>&lt;p&gt;本指南将通过一份美味的意面食谱，向您展示如何使用 Markdown 格式化文本。让我们在学习 Markdown 语法的同时，探索美食的世界！&lt;/p&gt;
+style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><title>Markdown 美食食谱写作指南</title><link>https://esperanzaee.github.io/posts/markdown-syntax-guide/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/markdown-syntax-guide/</guid><description>&lt;p&gt;本指南将通过一份&lt;span class="inline-blur"&gt;
+ 美味的意面食谱
+&lt;/span&gt;
+
+&lt;style&gt;
+ .inline-blur {
+ 
+ display: inline;
+ filter: blur(3px);
+ cursor: pointer;
+ transition: filter 0.3s ease;
+ 
+ border-bottom: 1px dashed #999;
+ }
+
+ 
+ .inline-blur:hover {
+ filter: blur(0);
+ border-bottom: none; 
+ }
+&lt;/style&gt;，向您展示如何使用 Markdown 格式化文本。让我们在学习 Markdown 语法的同时，探索美食的世界！&lt;/p&gt;
 &lt;h2 id="基础语法演示"&gt;基础语法演示&lt;/h2&gt;
 &lt;h3 id="标题级别"&gt;标题级别&lt;/h3&gt;
 &lt;p&gt;在食谱中，我们经常需要不同级别的标题来组织内容。Markdown 提供了六个级别的标题：&lt;/p&gt;
