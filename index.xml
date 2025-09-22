@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>没有脚的鸟</title><link>https://esperanzaee.github.io/</link><description>Recent content on 没有脚的鸟</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客搭建流程</title><link>https://esperanzaee.github.io/posts/upgrade_submodule/</link><pubDate>Wed, 10 Sep 2025 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/upgrade_submodule/</guid><description>&lt;h2 id="博客自动化部署到github-pages流程"&gt;博客自动化部署到github pages流程&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>没有脚的鸟</title><link>https://esperanzaee.github.io/</link><description>Recent content on 没有脚的鸟</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Sep 2025 15:40:29 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>搬运工的博客装修实录</title><link>https://esperanzaee.github.io/posts/blog-diy/</link><pubDate>Mon, 22 Sep 2025 15:40:29 +0800</pubDate><guid>https://esperanzaee.github.io/posts/blog-diy/</guid><description>&lt;p&gt;博客搭起来完全靠东搬一下，西搬一下。&lt;br&gt;
+我不敢想，以后我有勇气换博客主题吗？（瑟瑟发抖.gif）&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;而且我不是很会代码这东西，完全靠搜索引擎上的各位网友和AI。m(_ _)m&lt;br&gt;
+&lt;strong&gt;博客主题&lt;/strong&gt;：hugo的&lt;a href="https://github.com/hanwenguo/hugo-theme-nostyleplease"&gt;hugo-theme-nostyleplease&lt;/a&gt;。&lt;br&gt;
+&lt;strong&gt;首页布局&lt;/strong&gt;：itinerae提供的免费模板中的&lt;a href="https://itinerae.neocities.org/bloodyhell"&gt;Oh bloody hell&lt;/a&gt;。&lt;br&gt;
+&lt;strong&gt;评论、说说&lt;/strong&gt;：说说参考了&lt;a href="gregueria.icu"&gt; 再會，謝謝所有的&lt;/a&gt;老师写的&lt;a href="https://gregueria.icu/posts/2025-05-13/"&gt;Status Cafe挂件&lt;/a&gt;的教程。评论也是参考了老师的！老师弄上去的那些小表情可爱的要鼠！一眼就看上了。老师是真的宝藏啊！好多都会写教程！&lt;br&gt;
+&lt;strong&gt;文章页样式&lt;/strong&gt;：也是参考了&lt;a href="gregueria.icu"&gt; 再會，謝謝所有的&lt;/a&gt;老师的，然后在老师的基础上改了些颜色啥的。&lt;br&gt;
+&lt;strong&gt;其他&lt;/strong&gt;：靠主题自带，再跟AI“友好”交流了一番加了些样式得到滴。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;记录一下当前博客的预览：&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;img
+ src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250922153328852.png"
+ alt="首页预览"
+ class="post-image"
+ style="border: 2px solid #d28aba; border-radius: 6px"
+ /&gt;
+&lt;img
+ src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250922153328853.png"
+ alt="列表页预览"
+ class="post-image"
+ style="border: 2px solid #d28aba; border-radius: 6px"
+ /&gt;
+ &lt;img
+ src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250922153328854.png"
+ alt="内容页预览"
+ class="post-image"
+ style="border: 2px solid #d28aba; border-radius: 6px"
+ /&gt;
+&lt;/p&gt;</description></item><item><title>Hugo博客搭建流程</title><link>https://esperanzaee.github.io/posts/upgrade_submodule/</link><pubDate>Wed, 10 Sep 2025 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/upgrade_submodule/</guid><description>&lt;h2 id="博客自动化部署到github-pages流程"&gt;博客自动化部署到github pages流程&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;使用私有仓库A → 构建 Hugo → 部署到公开仓库B(xxxxx.github.io)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id="第一步创建-personal-access-token-pat"&gt;第一步：创建 Personal Access Token (PAT)&lt;/h3&gt;
@@ -383,4 +411,20 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;3.&lt;/span&gt; 加入培根翻炒
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="块引用"&gt;块引用&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;厨师提示：在开水中加一点橄榄油，可以防止意面粘连。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;厨师提示：在开水中加一点橄榄油，可以防止意面粘连。&lt;/p&gt;</description></item><item><title>Test Markdown</title><link>https://esperanzaee.github.io/posts/test-markdown/</link><pubDate>Sun, 01 Jan 2023 10:28:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-markdown/</guid><description>&lt;h1 id="markdown-test-page"&gt;&lt;a name="top"&gt;&lt;/a&gt;Markdown Test Page&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#Headings"&gt;Headings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Paragraphs"&gt;Paragraphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Blockquotes"&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Lists"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Horizontal"&gt;Horizontal rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Table"&gt;Table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Code"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#Inline"&gt;Inline elements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="headings"&gt;&lt;a name="Headings"&gt;&lt;/a&gt;Headings&lt;/h1&gt;
+&lt;h1 id="heading-one"&gt;Heading one&lt;/h1&gt;
+&lt;p&gt;Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt.&lt;/p&gt;
+&lt;h2 id="heading-two"&gt;Heading two&lt;/h2&gt;
+&lt;p&gt;Aute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim.&lt;/p&gt;</description></item></channel></rss>
