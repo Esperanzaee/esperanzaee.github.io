@@ -70,14 +70,14 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --baseURL &#34;https://blog.esperanzaee.top/&#34;
+        run: hugo --minify --baseURL &#34;域名&#34;
 
       - name: Deploy to esperanzaee.github.io
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
-          external_repository: Esperanzaee/esperanzaee.github.io
+          external_repository: 用户名/仓库名
           publish_branch: main
           allow_empty_commit: true
           keep_files: false
@@ -86,7 +86,7 @@ jobs:
 第四步：配置 Cloudflare DNS（如果自己有域名的话）
 
 
-登录 Cloudflare，选择或者添加自己的域名"><title>Hugo博客搭建流程 | 没有脚的鸟</title><link rel="shortcut icon" type=image/x-icon href=/imgs/avatar4.png><link rel=stylesheet href=/css/main.3a373b3af9aa0de9d30942a8adfdaa22d08ff1455b8df444f20742762f4ce448277d64ed8f0fc3ca29752f380cedb9e7aa5cb709dc5840463e39500f89c140e3.css integrity="sha512-Ojc7OvmqDenTCUKorf2qItCP8UVbjfRE8gdCdi9M5EgnfWTtjw/Dyil1LzgM7bnnqly3CdxYQEY+OVAPicFA4w=="></head><body a=auto><main class=page-content aria-label=Content><div class=w-container><div class=sidebar-left><div class=card><img src=/imgs/avatar4.png alt=Logo class=logo><p>欢迎<br>没有脚的鸟</p><ul class=menuother><li><a href=/>首页</a></li><li><a href=/posts>小记</a></li><li><a href=/about>关于</a></li></ul></div></div><div class=w2><div class=mobile-nav><div id=navigationother><div id=navigationother2><a href=/ class=nav-button>首页</a>
+登录 Cloudflare，选择或者添加自己的域名"><title>Hugo博客搭建流程 | 没有脚的鸟</title><link rel="shortcut icon" type=image/x-icon href=/imgs/avatar4.png><link rel=stylesheet href=/css/main.4f23eb4c86a2bcea8aac27f5aec9ae22dfc104be6e4d7353021daedd5a4b940654916a62d028ee780367ffc471b615ebfe2b0150a6e95fd9f3586753d09bd70b.css integrity="sha512-TyPrTIaivOqKrCf1rsmuIt/BBL5uTXNTAh2u3VpLlAZUkWpi0CjueANn/8RxthXr/isBUKbpX9nzWGdT0JvXCw=="></head><body a=auto><main class=page-content aria-label=Content><div class=w-container><div class=sidebar-left><div class=card><img src=/imgs/avatar4.png alt=Logo class=logo><p>欢迎<br>没有脚的鸟</p><ul class=menuother><li><a href=/>首页</a></li><li><a href=/posts>小记</a></li><li><a href=/about>关于</a></li></ul></div></div><div class=w2><div class=mobile-nav><div id=navigationother><div id=navigationother2><a href=/ class=nav-button>首页</a>
 <a href=/posts class=nav-button>小记</a>
 <a href=/about class=nav-button>关于</a></div></div></div><article><div class=main-content><h1 data-pagefind-meta=title t>Hugo博客搭建流程</h1><div id=post-meta><time datetime="2025-09-10 00:00:00 +0800 +0800">2025-09-10
 <span>‧ 362</span>
@@ -118,14 +118,14 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --baseURL &#34;https://blog.esperanzaee.top/&#34;
+        run: hugo --minify --baseURL &#34;域名&#34;
 
       - name: Deploy to esperanzaee.github.io
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
-          external_repository: Esperanzaee/esperanzaee.github.io
+          external_repository: 用户名/仓库名
           publish_branch: main
           allow_empty_commit: true
           keep_files: false
@@ -135,13 +135,13 @@ jobs:
 git commit -m &#34;feat: setup CI and deploy&#34;
 git push origin main
 </code></pre><h2 id=hugo-子模块主题更新流程>Hugo 子模块主题更新流程</h2><blockquote><p>适用场景：你使用 Git 子模块管理主题，且已 Fork 主题仓库，希望更新并提交变更。</p></blockquote><h3 id=-前提条件仅需执行一次>📌 前提条件（仅需执行一次）</h3><p>如果你是第一次添加该子模块，请在项目根目录执行：</p><pre tabindex=0><code># 添加子模块（仅首次执行）
-git submodule add https://github.com/Esperanzaee/hugo-binder-theme.git themes/hugo-binder
+git submodule add 目标仓库地址 themes/hugo-binder
 
 # 提交子模块初始化
-git add .gitmodules themes/hugo-binder
-git commit -m &#34;feat: add hugo-binder theme as submodule&#34;
+git add .gitmodules themes/hugo
+git commit -m &#34;feat: add hugo theme as submodule&#34;
 git push origin main
-</code></pre><blockquote><p>✅ 提示：.gitmodules 文件会记录子模块的 URL 和路径。</p></blockquote><h3 id=日常更新流程当你在-themesxxxx-中修改代码时>日常更新流程（当你在 themes/xxxx 中修改代码时）</h3><ol><li>进入子模块目录，提交并推送主题本身的更改</li></ol><pre tabindex=0><code>cd themes/hugo-binder
+</code></pre><blockquote><p>✅ 提示：.gitmodules 文件会记录子模块的 URL 和路径。</p></blockquote><h3 id=日常更新流程当你在-themesxxxx-中修改代码时>日常更新流程（当你在 themes/xxxx 中修改代码时）</h3><ol><li>进入子模块目录，提交并推送主题本身的更改</li></ol><pre tabindex=0><code>cd themes/hugo
 </code></pre><p>确保你在正确的分支（通常是 main 或 master）：</p><pre tabindex=0><code>git checkout main
 </code></pre><p>拉取最新代码（避免冲突）：</p><pre tabindex=0><code>git pull origin main
 </code></pre><p>进行你的修改（如修复配置、样式等），然后提交：</p><pre tabindex=0><code>git add .
@@ -149,18 +149,18 @@ git commit -m &#34;Fix: remove theme = hugo-looseleaf to prevent nesting&#34;
 git push origin main
 </code></pre><blockquote><p>✅ 这一步会把主题的更新推送到你的 Fork 仓库</p></blockquote><ol start=2><li>回到主项目，更新子模块指针</li></ol><pre tabindex=0><code>cd ../../  # 回到 Hugo 项目根目录
 </code></pre><p>此时主项目会显示子模块有“新提交”：</p><pre tabindex=0><code>git status
-# 输出类似：modified:   themes/hugo-binder (new commits)
-</code></pre><p>将子模块的引用更新到最新提交：</p><pre tabindex=0><code>git add themes/hugo-binder
-git commit -m &#34;chore: update submodule hugo-binder to latest commit&#34;
+# 输出类似：modified:   themes/hugo (new commits)
+</code></pre><p>将子模块的引用更新到最新提交：</p><pre tabindex=0><code>git add themes/hugo
+git commit -m &#34;chore: update submodule hugo to latest commit&#34;
 git push origin main
-</code></pre><blockquote><p>✅ 这一步会触发 GitHub Actions 构建并部署你的博客。</p></blockquote><h3 id=补充建议同步上游主题更新可选>补充建议：同步上游主题更新（可选）</h3><p>如果你希望合并原主题作者的更新（比如修复 bug、新增功能）：</p><pre tabindex=0><code>cd themes/hugo-binder
+</code></pre><blockquote><p>✅ 这一步会触发 GitHub Actions 构建并部署你的博客。</p></blockquote><h3 id=补充建议同步上游主题更新可选>补充建议：同步上游主题更新（可选）</h3><p>如果你希望合并原主题作者的更新（比如修复 bug、新增功能）：</p><pre tabindex=0><code>cd themes/hugo
 git remote -v                  # 查看当前远程仓库
-git remote add upstream https://github.com/original/hugo-binder-theme.git  # 添加上游仓库（仅一次）
+git remote add upstream 上游仓库地址  # 添加上游仓库（仅一次）
 git fetch upstream             # 获取上游更新
 git merge upstream/main        # 合并到本地
 git push origin main           # 推送到你的 Fork
 cd ../../
-git add themes/hugo-binder
-git commit -m &#34;chore: sync upstream changes for hugo-binder theme&#34;
+git add themes/hugo
+git commit -m &#34;chore: sync upstream changes for hugo theme&#34;
 git push origin main
-</code></pre></div></article><script src=https://unpkg.com/@waline/client@v2/dist/waline.js></script><link rel=stylesheet href=https://unpkg.com/@waline/client@v2/dist/waline.css><div id=comments class=comments data-pagefind-ignore><style>:root{--waline-color:unset;--waline-bgcolor-light:unset}.wl-card{border:0 solid #eee}.wl-card .wl-quote{border-inline-start:0 dashed rgba(237,237,237,.5)}.wl-card-item{position:relative;display:flex;padding:.2em}.wl-addr{display:none!important;color:transparent!important}.wl-content .vemoji,.wl-content .wl-emoji{display:inline-block;vertical-align:baseline;height:3.4em!important;margin:-.125em .25em}img.wl-emoji,img.vemoji{vertical-align:sub;transition:ease-out .6s}img.wl-emoji:hover,img.vemoji:hover{transform:scale(1.8)!important}.wl-header{display:flex;overflow:hidden;padding:0 4px;border-bottom:0 dashed var(--waline-border-color);border-top-left-radius:0;border-top-right-radius:0;border-bottom:1px dashed #b39eb5}.wl-btn.primary{border-color:transparent!important;background:#694e69;color:#fff}@media(max-width:580px){.wl-header-item:not(:last-child){border-bottom:0 dashed var(--waline-border-color)}}:root{--waline-theme-color:#694e69;--waline-active-color:#694e69;--waline-light-grey:unset;--waline-info-color:unset;--waline-border:0px solid #9b759b}[data-waline] a{color:var(--link-color)}.wl-card .wl-badge{display:inline-block;margin-inline-end:1em;padding:0 .3em;border:2px solid #9b759b;border-radius:4px;color:#9b759b;font-weight:700;font-size:65%}.wl-editor:focus,.wl-input:focus{background:0 0}.wl-panel{background-color:#f2ede6;border-top:3px solid #fee3fd;background-image:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.8)),url(/site/bg-rain2_5color1.gif);background-repeat:repeat}body[a=dark] .wl-panel{background-image:none!important;background-color:rgba(23,14,14,.38)!important}.wl-card .wl-delete,.wl-card .wl-like,.wl-card .wl-reply,.wl-card .wl-edit,.wl-card span.wl-nick,.wl-empty,.wl-admin-actions,[data-waline] p{color:unset}.wl-info .wl-text-number{color:unset;font-size:.75em}.wl-editor,.wl-input{font-family:inherit;font-size:80%}</style><div id=waline data-pagefind-ignore></div><script>Waline.init({el:"#waline",serverURL:"https://blog-comment-ldyoe0uzg-esperanzaee-projects.vercel.app/api",emoji:["https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan","https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif","https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs","https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png"],requiredMeta:["name","email","url"],dark:!0,locale:{placeholder:"欢迎留言~",admin:"admin",sofa:"此间无字，唯待君落墨成章。",anonymous:"「匿名」天下行走"},search:!1,imageUploader:!1,mathJax:!1})</script></div><div id=footer1><div id=footer2>© 2025 - 没有脚的鸟.</div></div></div></div></div></main><script src=/js/view-image.min.js defer></script><script>document.addEventListener("DOMContentLoaded",function(){const e=".main-content img:not([no-view])";window.ViewImage&&ViewImage.init(e)})</script></body></html>
+</code></pre></div></article><script src=https://unpkg.com/@waline/client@v2/dist/waline.js></script><link rel=stylesheet href=https://unpkg.com/@waline/client@v2/dist/waline.css><div id=comments class=comments data-pagefind-ignore><style>:root{--waline-color:unset;--waline-bgcolor-light:unset}.wl-card{border:0 solid #eee}.wl-card .wl-quote{border-inline-start:0 dashed rgba(237,237,237,.5)}.wl-card-item{position:relative;display:flex;padding:.2em}.wl-addr{display:none!important;color:transparent!important}.wl-content .vemoji,.wl-content .wl-emoji{display:inline-block;vertical-align:baseline;height:3.4em!important;margin:-.125em .25em}img.wl-emoji,img.vemoji{vertical-align:sub;transition:ease-out .6s}img.wl-emoji:hover,img.vemoji:hover{transform:scale(1.8)!important}.wl-header{display:flex;overflow:hidden;padding:0 4px;border-bottom:0 dashed var(--waline-border-color);border-top-left-radius:0;border-top-right-radius:0;border-bottom:1px dashed #b39eb5}.wl-btn.primary{border-color:transparent!important;background:#694e69;color:#fff}@media(max-width:580px){.wl-header-item:not(:last-child){border-bottom:0 dashed var(--waline-border-color)}}:root{--waline-theme-color:#694e69;--waline-active-color:#694e69;--waline-light-grey:unset;--waline-info-color:unset;--waline-border:0px solid #9b759b}[data-waline] a{color:var(--link-color)}.wl-card .wl-badge{display:inline-block;margin-inline-end:1em;padding:0 .3em;border:2px solid #9b759b;border-radius:4px;color:#9b759b;font-weight:700;font-size:65%}.wl-editor:focus,.wl-input:focus{background:0 0}.wl-panel{background-color:#f2ede6;border-top:3px solid #fee3fd;background-image:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.8)),url(/site/bg-rain2_5color1.gif);background-repeat:repeat}body[a=dark] .wl-panel{background-image:none!important;background-color:rgba(23,14,14,.38)!important}.wl-card .wl-delete,.wl-card .wl-like,.wl-card .wl-reply,.wl-card .wl-edit,.wl-card span.wl-nick,.wl-empty,.wl-admin-actions,[data-waline] p{color:unset}.wl-info .wl-text-number{color:unset;font-size:.75em}.wl-editor,.wl-input{font-family:inherit;font-size:80%}</style><div id=waline data-pagefind-ignore></div><script>Waline.init({el:"#waline",serverURL:"https://blog-comment-ldyoe0uzg-esperanzaee-projects.vercel.app/api",emoji:["https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan","https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif","https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs","https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png"],requiredMeta:["name","email","url"],dark:!0,locale:{placeholder:"欢迎留言~",admin:"admin",sofa:"此间无字，唯待君落墨成章。",anonymous:"「匿名」天下行走"},search:!1,imageUploader:!1,mathJax:!1})</script></div><div id=footer1><div id=footer2>© 2025 - 没有脚的鸟.</div></div></div></div></div></main><script src=/js/view-image.min.js defer></script><script>document.addEventListener("DOMContentLoaded",function(){const e=".main-content img:not([no-view]), .image-grid img:not([no-view])";window.ViewImage&&ViewImage.init(e)})</script></body></html>

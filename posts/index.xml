@@ -70,14 +70,14 @@ jobs:
  extended: true
 
  - name: Build
- run: hugo --minify --baseURL &amp;#34;https://blog.esperanzaee.top/&amp;#34;
+ run: hugo --minify --baseURL &amp;#34;域名&amp;#34;
 
  - name: Deploy to esperanzaee.github.io
  uses: peaceiris/actions-gh-pages@v3
  with:
  personal_token: ${{ secrets.PERSONAL_TOKEN }}
  publish_dir: ./public
- external_repository: Esperanzaee/esperanzaee.github.io
+ external_repository: 用户名/仓库名
  publish_branch: main
  allow_empty_commit: true
  keep_files: false
