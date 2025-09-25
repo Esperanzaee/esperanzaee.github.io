@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 没有脚的鸟</title><link>https://esperanzaee.github.io/posts/</link><description>Recent content in Posts on 没有脚的鸟</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Sep 2025 15:40:29 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>搬运工的博客装修实录</title><link>https://esperanzaee.github.io/posts/blog-diy/</link><pubDate>Mon, 22 Sep 2025 15:40:29 +0800</pubDate><guid>https://esperanzaee.github.io/posts/blog-diy/</guid><description>&lt;p&gt;博客搭起来完全靠东搬一下，西搬一下。&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 没有脚的鸟</title><link>https://esperanzaee.github.io/posts/</link><description>Recent content in Posts on 没有脚的鸟</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 25 Sep 2025 11:01:05 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>记录一些我喜欢的shortcodes</title><link>https://esperanzaee.github.io/posts/shortcode-part-one/</link><pubDate>Thu, 25 Sep 2025 11:01:05 +0800</pubDate><guid>https://esperanzaee.github.io/posts/shortcode-part-one/</guid><description>&lt;p&gt;都是参考的网友的，参考出处在最后的脚注。&lt;/p&gt;
+&lt;h2 id="对话框"&gt;对话框&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;p&gt;先来展示一下:&lt;/p&gt;
+&lt;div &gt;
+&lt;link rel="stylesheet" href="https://esperanzaee.github.io/css/_shortcode.scss" /&gt;
+
+&lt;div class="message "&gt;
+ &lt;div class="message__inner"&gt;
+ 
+ &lt;img class="avatar" src="https://unavatar.io/alice@example.com" width="24" height="24"&gt;
+ 
+ &lt;div class="message__text"&gt;
+ &lt;hstack class="message__meta"&gt;Alice &lt;spacer&gt;&lt;/spacer&gt; 10:30 AM&lt;/hstack&gt;
+ 
+Hello, how are you today?
+
+
+ 
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://esperanzaee.github.io/css/_shortcode.scss" /&gt;
+
+&lt;div class="message --self"&gt;
+ &lt;div class="message__inner"&gt;
+ 
+ &lt;img class="avatar" src="https://unavatar.io/you@gmail.com" width="24" height="24"&gt;
+ 
+ &lt;div class="message__text"&gt;
+ &lt;hstack class="message__meta"&gt;You &lt;spacer&gt;&lt;/spacer&gt; 10:32 AM&lt;/hstack&gt;
+ 
+I'm good, thanks!
+
+
+ 
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://esperanzaee.github.io/css/_shortcode.scss" /&gt;
+
+&lt;div class="message "&gt;
+ &lt;div class="message__inner"&gt;
+ 
+ &lt;img class="avatar" src="https://unavatar.io/bob@github.com" width="24" height="24"&gt;
+ 
+ &lt;div class="message__text"&gt;
+ &lt;hstack class="message__meta"&gt;Bob &lt;spacer&gt;&lt;/spacer&gt; 10:35 AM&lt;/hstack&gt;
+ 
+Check out these screenshots!
+
+
+ 
+ &lt;div class="grid-container"&gt;
+ 
+ &lt;div class="grid-item"&gt;
+ &lt;img class="message__img" src="https://esperanzaee.github.io/imgs/peopleo.svg" alt="Image"&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;br&gt;
+&lt;p&gt;对话框对应的短代码，放置在layout/shortcodes/message.html下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# Ingredient Calculator
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;link&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;rel&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;href&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;/css/message.css&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;message {{if eq (.Get &amp;#34;&lt;/span&gt;&lt;span style="color:#8fbcbb"&gt;from&lt;/span&gt;&lt;span style="color:#bf616a"&gt;&amp;#34;)&lt;/span&gt; &lt;span style="color:#bf616a"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#8fbcbb"&gt;self&lt;/span&gt;&lt;span style="color:#bf616a"&gt;&amp;#34;}}&lt;/span&gt;&lt;span style="color:#8fbcbb"&gt;--self&lt;/span&gt;&lt;span style="color:#bf616a"&gt;{{&lt;/span&gt;&lt;span style="color:#8fbcbb"&gt;end&lt;/span&gt;&lt;span style="color:#bf616a"&gt;}}&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;message__inner&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{if ne (.Get &amp;#34;accountID&amp;#34;) &amp;#34;&amp;#34;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;img&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;avatar&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;src&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;https://unavatar.io/{{.Get &amp;#34;&lt;/span&gt;&lt;span style="color:#8fbcbb"&gt;accountID&lt;/span&gt;&lt;span style="color:#bf616a"&gt;&amp;#34;}}&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;width&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;24&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;height&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;24&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{else}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;img&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;avatar&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;src&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;width&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;24&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;height&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;24&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;style&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;visibility:hidden;&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{end}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;message__text&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;hstack&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;message__meta&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;{{.Get &amp;#34;name&amp;#34;}} &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;spacer&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;spacer&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt; {{.Get &amp;#34;timestamp&amp;#34;}}&lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;hstack&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{.Inner}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{if ne (.Get &amp;#34;images&amp;#34;) &amp;#34;&amp;#34;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;grid-container&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{range split (.Get &amp;#34;images&amp;#34;) &amp;#34;,&amp;#34;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;grid-item&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;img&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;class&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;message__img&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;src&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;{{.}}&amp;#34;&lt;/span&gt; &lt;span style="color:#8fbcbb"&gt;alt&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;Image&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{end}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {{end}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;div&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;对话框对应的样式代码，放置在assets/css/shortcode.css下：&lt;/p&gt;</description></item><item><title>搬运工的博客装修实录</title><link>https://esperanzaee.github.io/posts/blog-diy/</link><pubDate>Mon, 22 Sep 2025 15:40:29 +0800</pubDate><guid>https://esperanzaee.github.io/posts/blog-diy/</guid><description>&lt;p&gt;博客搭起来完全靠东搬一下，西搬一下。&lt;br&gt;
 我不敢想，以后我有勇气换博客主题吗？（瑟瑟发抖.gif）&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;而且我不是很会代码这东西，完全靠搜索引擎上的各位网友和AI。m(_ _)m&lt;br&gt;
 &lt;strong&gt;博客主题&lt;/strong&gt;：hugo的&lt;a href="https://github.com/hanwenguo/hugo-theme-nostyleplease"&gt;hugo-theme-nostyleplease&lt;/a&gt;。&lt;br&gt;
@@ -351,24 +442,24 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;h2 id="基础语法演示"&gt;基础语法演示&lt;/h2&gt;
 &lt;h3 id="标题级别"&gt;标题级别&lt;/h3&gt;
 &lt;p&gt;在食谱中，我们经常需要不同级别的标题来组织内容。Markdown 提供了六个级别的标题：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;# 经典蒜香培根意面
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;## 食材准备
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;### 主要食材
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;#### 调味料
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;##### 厨房用具
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79740e;font-weight:bold"&gt;###### 小贴士
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;# 经典蒜香培根意面
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;## 食材准备
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;### 主要食材
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;#### 调味料
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;##### 厨房用具
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#88c0d0;font-weight:bold"&gt;###### 小贴士
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="文本格式化"&gt;文本格式化&lt;/h3&gt;
 &lt;p&gt;在描述食谱时，我们经常需要强调某些重要的信息：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;重要步骤&lt;/strong&gt;需要加粗
 &lt;em&gt;关键时机&lt;/em&gt;使用斜体
 **&lt;em&gt;特别提示&lt;/em&gt;**同时使用粗体和斜体
 &lt;del&gt;可选步骤&lt;/del&gt;使用删除线&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**重要步骤**需要加粗
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**重要步骤**需要加粗
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;*关键时机*使用斜体
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**_特别提示_**同时使用粗体和斜体
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;~~可选步骤~~使用删除线
@@ -385,12 +476,12 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;li&gt;蒜末 3-4瓣&lt;/li&gt;
 &lt;li&gt;橄榄油 2汤匙&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 意面 400克
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 培根 200克
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 最好是肥瘦相间的
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 切成小块
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 蒜末 3-4瓣
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;-&lt;/span&gt; 橄榄油 2汤匙
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;-&lt;/span&gt; 意面 400克
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;-&lt;/span&gt; 培根 200克
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;-&lt;/span&gt; 最好是肥瘦相间的
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;-&lt;/span&gt; 切成小块
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;-&lt;/span&gt; 蒜末 3-4瓣
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;-&lt;/span&gt; 橄榄油 2汤匙
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="烹饪步骤有序列表"&gt;烹饪步骤（有序列表）：&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;烧开水，加一小撮盐&lt;/li&gt;
@@ -403,12 +494,12 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;1.&lt;/span&gt; 烧开水，加一小撮盐
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;2.&lt;/span&gt; 加入意面，煮至八分熟
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#af3a03"&gt;3.&lt;/span&gt; 同时，准备酱汁：
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;1.&lt;/span&gt; 锅中热油
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;2.&lt;/span&gt; 炒香蒜末
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#af3a03"&gt;3.&lt;/span&gt; 加入培根翻炒
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;1.&lt;/span&gt; 烧开水，加一小撮盐
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;2.&lt;/span&gt; 加入意面，煮至八分熟
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;3.&lt;/span&gt; 同时，准备酱汁：
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;1.&lt;/span&gt; 锅中热油
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;2.&lt;/span&gt; 炒香蒜末
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;3.&lt;/span&gt; 加入培根翻炒
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="块引用"&gt;块引用&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;厨师提示：在开水中加一点橄榄油，可以防止意面粘连。&lt;/p&gt;</description></item><item><title>Test Markdown</title><link>https://esperanzaee.github.io/posts/test-markdown/</link><pubDate>Sun, 01 Jan 2023 10:28:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-markdown/</guid><description>&lt;h1 id="markdown-test-page"&gt;&lt;a name="top"&gt;&lt;/a&gt;Markdown Test Page&lt;/h1&gt;
