@@ -32,8 +32,8 @@
 其实我一开始就好奇，为啥丁奇拥有这能力，只有除了需要改变的节点会不按照原来发生的走，否则其他节点都会一切照旧，然后看到距离说是怕有别的跟他有一样的能力的人发现他。行吧，是我有这能力的话，根本无法记得昨天具体干了啥。重要的是怕被抓去当小白鼠。&lt;br&gt;&lt;br&gt;
 还有就是这个墨远致，从头到尾都说为了自己的爱人，其实我感觉是自己魔怔了，完全忘记初心，拿这个当借口好合理化自己做的一切事（比如杀死自己的合作伙伴)&lt;br&gt;&lt;br&gt;
 还有就是墨远致的博导，一开始在墨的嘴里，我以为是个光正的人，一心致力于研究基因药物，然后不善于表达，就显得人怪。就觉得情有可原。结果也是个小人&amp;hellip;也是个因为研究疯魔了的小人，觉得临终患者的命不是命，觉得都要死&amp;hellip;&lt;br&gt;&lt;br&gt;
-最后感觉就是只要是涉及基因药物，人的贪婪都会被放大，上一次看到涉及基因药物的还是《猎罪图鉴》里的一个案子，没记错的话我就记得一有钱男的想让自己后面娶的小老婆生下来的孩子通过基因改变变得聪明还是啥（其实我看到这就已经震惊了，当时就在想，难怪人会的疯狂，这要是能改变基因得多可怕，不敢想！）&lt;/p&gt;</description></item><item><title>记录一些我喜欢的shortcodes</title><link>https://esperanzaee.github.io/posts/shortcode-part-one/</link><pubDate>Thu, 25 Sep 2025 11:01:05 +0800</pubDate><guid>https://esperanzaee.github.io/posts/shortcode-part-one/</guid><description>&lt;p&gt;都是参考的网友的，参考出处在最后的脚注。&lt;/p&gt;
-&lt;h2 id="对话框"&gt;对话框&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+最后感觉就是只要是涉及基因药物，人的贪婪都会被放大，上一次看到涉及基因药物的还是《猎罪图鉴》里的一个案子，没记错的话我就记得一有钱男的想让自己后面娶的小老婆生下来的孩子通过基因改变变得聪明还是啥（其实我看到这就已经震惊了，当时就在想，难怪人会的疯狂，这要是能改变基因得多可怕，不敢想！）&lt;/p&gt;</description></item><item><title>记录一些我喜欢的shortcodes</title><link>https://esperanzaee.github.io/posts/shortcode-part-one/</link><pubDate>Thu, 25 Sep 2025 11:01:05 +0800</pubDate><guid>https://esperanzaee.github.io/posts/shortcode-part-one/</guid><description>&lt;h2 id="对话框"&gt;对话框&lt;/h2&gt;
+&lt;p&gt;参考：&lt;a href="https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E9%94%AE%E7%9B%98%E6%A0%B7%E5%BC%8F"&gt;眠于水月间 - Hugo | 在 Stack 主题上可行的短代码们&lt;/a&gt;. &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;先来展示一下:&lt;/p&gt;
 &lt;div &gt;
 &lt;div class="message "&gt;
@@ -131,19 +131,19 @@ Check out these screenshots!
  src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250922153328852.png"
  alt="首页预览"
  class="post-image"
- style="border: 2px solid #d28aba; border-radius: 6px"
+ style="border: 1px solid #000; border-radius: 6px"
  /&gt;
 &lt;img
  src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250922153328853.png"
  alt="列表页预览"
  class="post-image"
- style="border: 2px solid #d28aba; border-radius: 6px"
+ style="border: 1px solid #000; border-radius: 6px"
  /&gt;
  &lt;img
  src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250922153328854.png"
  alt="内容页预览"
  class="post-image"
- style="border: 2px solid #d28aba; border-radius: 6px"
+ style="border: 1px solid #000; border-radius: 6px"
  /&gt;
 &lt;/p&gt;</description></item><item><title>Hugo博客搭建流程</title><link>https://esperanzaee.github.io/posts/upgrade_submodule/</link><pubDate>Wed, 10 Sep 2025 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/upgrade_submodule/</guid><description>&lt;h2 id="博客自动化部署到github-pages流程"&gt;博客自动化部署到github pages流程&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -466,7 +466,7 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
  filter: blur(0);
  border-bottom: none; 
  }
-&lt;/style&gt;，向您展示如何使用 Markdown 格式化文本。让我们在学习 Markdown 语法的同时，探索美食的世界！&lt;/p&gt;
+&lt;/style&gt;，向您展示如何使用 Markdown 格式化文本。让我们在学习 Markdown 语法的同时，&lt;mark&gt;探索美食的世界！&lt;/mark&gt;&lt;/p&gt;
 &lt;h2 id="基础语法演示"&gt;基础语法演示&lt;/h2&gt;
 &lt;h3 id="标题级别"&gt;标题级别&lt;/h3&gt;
 &lt;p&gt;在食谱中，我们经常需要不同级别的标题来组织内容。Markdown 提供了六个级别的标题：&lt;/p&gt;
