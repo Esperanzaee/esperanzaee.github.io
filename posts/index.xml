@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 阿翎的小坞</title><link>https://esperanzaee.github.io/posts/</link><description>Recent content in Posts on 阿翎的小坞</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 09 Oct 2025 10:09:31 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>生活补丁集 No.2</title><link>https://esperanzaee.github.io/posts/2025-10-09-zaji/</link><pubDate>Thu, 09 Oct 2025 10:09:31 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2025-10-09-zaji/</guid><description>&lt;h2 id="强制无氧之搬猫砂"&gt;强制无氧之搬猫砂&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 阿翎的小坞</title><link>https://esperanzaee.github.io/posts/</link><description>Recent content in Posts on 阿翎的小坞</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 20 Oct 2025 15:31:29 +0800</lastBuildDate><atom:link href="https://esperanzaee.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Status.cafe 小技巧</title><link>https://esperanzaee.github.io/posts/status-cafe-skill/</link><pubDate>Mon, 20 Oct 2025 15:31:29 +0800</pubDate><guid>https://esperanzaee.github.io/posts/status-cafe-skill/</guid><description>&lt;h2 id="发布更长的帖子"&gt;发布更长的帖子&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;鼠标定位至输入框，右键选择&amp;quot;检查&amp;quot;后会同时打开发者工具页。&lt;/li&gt;
+&lt;li&gt;标记的蓝色区域内，双击修改maxlength的值为需要的字数长度。&lt;/li&gt;
+&lt;li&gt;修改之后操作回车，不刷新页面操作submit即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="表情选择限制"&gt;表情选择限制&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;鼠标定位至某个表情旁的圆圈选择按钮，右键选择&amp;quot;检查&amp;quot;后会同时打开发者工具页。&lt;/li&gt;
+&lt;li&gt;标记的蓝色区域内，双击修改value的值为需要的emoji。&lt;/li&gt;
+&lt;li&gt;修改之后操作回车，不刷新页面操作submit即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上&lt;a href="https://skykristal.art/Blog/posts/2025-04-14-Statuscafe-Tricks"&gt;参考出处&lt;/a&gt;&lt;/p&gt;</description></item><item><title>生活补丁集 No.2</title><link>https://esperanzaee.github.io/posts/2025-10-09-zaji/</link><pubDate>Thu, 09 Oct 2025 10:09:31 +0800</pubDate><guid>https://esperanzaee.github.io/posts/2025-10-09-zaji/</guid><description>&lt;h2 id="强制无氧之搬猫砂"&gt;强制无氧之搬猫砂&lt;/h2&gt;
 &lt;p&gt;每一次徒手把10Kg（噢！赶上活动的时候可能还有15kg的情况）重的猫砂从菜鸟驿站搬到家都像死过一回，看一下路径就知道我的辛酸了（路径： 菜鸟驿站 -&amp;gt;(中间大概100m)-&amp;gt; 楼下 -&amp;gt; 步梯6楼）。&lt;br&gt;
 每当搬猫砂的时候我可能都要问候一下快递小哥，为什么每次都不给我打电话，而是直接放菜鸟驿站了，哪怕给我送到我楼下都好啊！&lt;br&gt;
 现在感觉好多快递都不给人打电话了，现在我有收过的快递中，有圆通、中通、申通、顺丰、京东、天猫超市的丹鸟、韵达，只有顺丰和丹鸟会给我打电话问快递是要放驿站还是哪里。这两快递其实有时候感觉也只是流程上需要打电话问一下意向，因为我有时候周末在家会让送到我楼下，他们也是语气不太好，但是这我都可以接受，因为他们虽然有些不情愿，但起码会提前给我打电话，让送上门也会给送。&lt;/p&gt;
@@ -89,7 +101,8 @@ Max立马就到男生面前，不礼貌的也打了两次响指问“看了会�
 还有就是墨远致的博导，一开始在墨的嘴里，我以为是个光正的人，一心致力于研究基因药物，然后不善于表达，就显得人怪。就觉得情有可原。结果也是个小人&amp;hellip;也是个因为研究疯魔了的小人，觉得临终患者的命不是命，觉得都要死&amp;hellip;&lt;br&gt;&lt;br&gt;
 最后感觉就是只要是涉及基因药物，人的贪婪都会被放大，上一次看到涉及基因药物的还是《猎罪图鉴》里的一个案子，没记错的话我就记得一有钱男的想让自己后面娶的小老婆生下来的孩子通过基因改变变得聪明还是啥（其实我看到这就已经震惊了，当时就在想，难怪人会的疯狂，这要是能改变基因得多可怕，不敢想！）&lt;/p&gt;</description></item><item><title>Hugo博客搭建流程</title><link>https://esperanzaee.github.io/posts/upgrade_submodule/</link><pubDate>Wed, 10 Sep 2025 00:00:00 +0800</pubDate><guid>https://esperanzaee.github.io/posts/upgrade_submodule/</guid><description>&lt;h2 id="博客自动化部署到github-pages流程"&gt;博客自动化部署到github pages流程&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;使用私有仓库A → 构建 Hugo → 部署到公开仓库B(xxxxx.github.io)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;使用私有仓库A → 构建 Hugo → 部署到公开仓库B(xxxxx.github.io)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id="第一步创建-personal-access-token-pat"&gt;第一步：创建 Personal Access Token (PAT)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;你需要一个有权限写入目标仓库的 token。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;创建 PAT
@@ -105,7 +118,8 @@ Repository contents: Read and write&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;点击 Generate token，复制生成的 token（形如 ghp_xxx&amp;hellip;）并保存！&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;关掉页面后就再也看不到了！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;关掉页面后就再也看不到了！&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id="第二步在私有仓库添加-secret"&gt;第二步：在私有仓库添加 Secret&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;进入私有仓库的 settings → secrets → actions&lt;/li&gt;
@@ -182,69 +196,29 @@ jobs:
 &lt;p&gt;第五封信里面的主人公的一段话是看到了就想哭的程度:&lt;br /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我是一个逃避型社恐分子，慢热、被动，唯一的优点就是足够真诚。往往是别人走了两步以后，我可能才会尝试着迈出第一步，但是一旦有人热情地朝我跑来，我也会毫不犹豫地向ta走去。当我在人群分类夹里把这个人的分类归属到「朋友」，我就会全力以赴尽我所能地对ta释放出我最大的善意和热情。&lt;/p&gt;
-&lt;p&gt;—— 来自 &lt;a href="https://mp.weixin.qq.com/s/GGVlEmsO3xXXL9Zt50mnGg"&gt;《人物》- 遭遇「友情降级」的人&lt;/a&gt; 第五封信&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>记忆</title><link>https://esperanzaee.github.io/posts/memory/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/memory/</guid><description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;全文都是想到啥写啥，没啥逻辑性可言&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;—— 来自 &lt;a href="https://mp.weixin.qq.com/s/GGVlEmsO3xXXL9Zt50mnGg"&gt;《人物》- 遭遇「友情降级」的人&lt;/a&gt; 第五封信&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>记忆</title><link>https://esperanzaee.github.io/posts/memory/</link><pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/memory/</guid><description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;全文都是想到啥写啥，没啥逻辑性可言&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;今天刚开始读一本书——《你当像鸟飞往你的山》。&lt;/p&gt;
 &lt;p&gt;第一部分“择善”的第一句话写道：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我最强烈的记忆不是一段记忆。它是我想象出来的，之后回忆起来就像真的发生过一样。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;我最强烈的记忆不是一段记忆。它是我想象出来的，之后回忆起来就像真的发生过一样。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;看到这句话，我不由得想起我的朋友。
 我们几乎每天都会聊天，而我发现她的记忆力真的非常惊人，很多事情她都能记得清清楚楚。
 相比之下，我自己却常常连前两年发生的事情都记不太清楚，更不用说更久以前的事了。&lt;/p&gt;
 &lt;p&gt;在这句话下面，我看到有人这样讨论：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我们所看到的、听到的，以及我们的记忆，其实都经过大脑的加工。我们往往注意不到自己不愿注意的事情，同时记忆也会随着时间的推移，被不断重塑，逐渐变得更符合我们当前的认知，离真实的情况越来越远。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;我们所看到的、听到的，以及我们的记忆，其实都经过大脑的加工。我们往往注意不到自己不愿注意的事情，同时记忆也会随着时间的推移，被不断重塑，逐渐变得更符合我们当前的认知，离真实的情况越来越远。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;你所认为的未必是真相，那只是基于你认知的一种视角；你所记住的也未必是真实，那只是站在你立场上的一种想象。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;你所认为的未必是真相，那只是基于你认知的一种视角；你所记住的也未必是真实，那只是站在你立场上的一种想象。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;关于这种“记忆加工”，我回想了一下那些深深印在我脑海中的记忆——有些甚至不需要特定的物品或场景触发，我就能立刻回想起来。
 但我也意识到，当我向别人讲述这些事的时候，总会不自觉地带上自己的情绪，叙述往往不再客观。&lt;/p&gt;
 &lt;p&gt;我又纳闷为啥有些记忆我能记住，但大部分记不住，DeepSeek是这么回答的：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;自己在讲述记忆时会“不自主地加上情绪”，这恰恰证明了记忆的主观性和建构性。那些被你情绪渲染最深的记忆，往往已经不再是原始的“事实录像”，而是被你内心世界重新诠释过的、对你具有特殊心理意义的故事。&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>压轴</title><link>https://esperanzaee.github.io/posts/yazhou-misconception/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/yazhou-misconception/</guid><description>&lt;img src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818134246158.png"&gt;
-&lt;p&gt;上周末，不记得是看了什么了。&lt;br&gt;
-看到有个评论说“终于看到有用对压轴的了”。&lt;/p&gt;
-&lt;p&gt;出于好奇，上网查了一下这个词的意思和来源。&lt;br&gt;
-(&lt;em&gt;分割线范围内的说法均来源于网络&lt;/em&gt;)&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;‌压轴‌原指戏曲演出中倒数第二个节目，现也广泛用于形容演出或活动中最精彩、最引人注目的环节。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id="压轴的起源与戏曲传统"&gt;压轴的起源与戏曲传统‌&lt;br /&gt;&lt;/h3&gt;
-&lt;p&gt;“压轴”一词源于中国传统戏曲的场次安排。在折子戏演出中，通常分为五个部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;‌开锣戏‌：开场节目，用于暖场。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;‌早轴‌和‌中轴‌：中间过渡性节目。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;‌压轴‌：倒数第二个节目，由名角出演，内容最精彩，旨在留住观众。‌&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;‌大轴‌：最后一个节目，多为轻松短小的“送客戏”，观众可在此时段离场。‌&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="现代用法的演变"&gt;现代用法的演变‌&lt;br /&gt;&lt;/h3&gt;
-&lt;p&gt;尽管“压轴”本义为倒数第二，但现代语境中常被误用作“最后一个”或“最重磅”的意思。这种用法已被部分权威词典（如《中国戏曲曲艺词典》）认可为后起义。‌&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;值得注意的是，《新华字典》的修订反映了这个词义的争议：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;第六版《新华字典》把倒数第二个节目改为倒数第一个。&lt;/li&gt;
-&lt;li&gt;第八版《新华字典》又把倒数第一个节目改回倒数第二个（绝大多数人依然理解为倒数第一个，现多指占据份量大）。&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;那其实这么看下来，感觉日常生活中用的时候只用对了一层意思，也就是“&lt;strong&gt;由名角出演，内容最精彩，旨在留住观众&lt;/strong&gt;”。&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;我之前都是理所应当的认为最后一个出场的就是最被看重的。&lt;br /&gt;
-其实是之前追星过一段时间，做为粉的思维就是，压轴出场也就是最后一个出场的必定是最被看重的。&lt;br /&gt;&lt;/p&gt;</description></item><item><title>现在的剧宣下料都好猛啊！</title><link>https://esperanzaee.github.io/posts/wild-drama-promo-trends/</link><pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/wild-drama-promo-trends/</guid><description>&lt;p&gt;《献鱼》16号不是上了吗，那我这个无脑追剧人肯定是要去尝一下咸淡的！&lt;/p&gt;
-&lt;p&gt;然后我的小红书就开始360度无死角开始监控我，给我推这部剧的物料。&lt;/p&gt;
-&lt;p&gt;这不，立马就给我推了这些，看完之后只能感慨“下料真猛啊~”。&lt;/p&gt;
-&lt;p&gt;
-&lt;img
- src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818143335597.jpg"
- alt="图片1"
- class="post-image"
- /&gt;
-&lt;img
- src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818143335599.jpg"
- alt="图片2"
- class="post-image"
- /&gt;
- &lt;img
- src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818143335598.jpg"
- alt="图片3"
- class="post-image"
- /&gt;
-&lt;/p&gt;</description></item><item><title>微信最烦看到亲戚的消息</title><link>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</link><pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</guid><description>&lt;p&gt;这些人完全无视边界感，无论亲疏远近，总能理直气壮地对你指手画脚！&lt;/p&gt;
+&lt;p&gt;自己在讲述记忆时会“不自主地加上情绪”，这恰恰证明了记忆的主观性和建构性。那些被你情绪渲染最深的记忆，往往已经不再是原始的“事实录像”，而是被你内心世界重新诠释过的、对你具有特殊心理意义的故事。&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>微信最烦看到亲戚的消息</title><link>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</link><pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/annoying-wechat-relatives/</guid><description>&lt;p&gt;这些人完全无视边界感，无论亲疏远近，总能理直气壮地对你指手画脚！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;催婚&lt;/strong&gt;（美其名曰“为你好”）——&lt;br&gt;
 我结不结婚、什么时候结婚，关你什么事？&lt;br&gt;先管好自己家的一地鸡毛吧！&lt;/p&gt;
 &lt;img src="https://raw.githubusercontent.com/Esperanzaee/Images/main/blog/20250818103525038.jpg" style="display: block; margin: 0 auto; zoom: 80%;"&gt;
@@ -310,85 +284,7 @@ jobs:
 &lt;p&gt;&lt;strong&gt;还有更炸裂的：&lt;/strong&gt;&lt;br&gt;
 他和他妈妈经常去楼顶坐着，&lt;strong&gt;他妈妈也就比他多穿了一件背心&lt;/strong&gt;。&lt;br&gt;
 有时候，他还会在楼顶给他妈妈抹后背的药（或者别的什么）。&lt;br&gt;
-这时候，&lt;strong&gt;我真庆幸自己近视+晚上视线模糊，看得不那么清楚……&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>iconify 图标引用</title><link>https://esperanzaee.github.io/posts/iconify-quote/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/iconify-quote/</guid><description>&lt;h3 id="访问地址拼接规则"&gt;访问地址拼接规则&lt;/h3&gt;
-&lt;p&gt;[基础结构]
-&lt;a href="https://api.iconify.design/%7Bprefix%7D:%7Bicon-name%7D.%7Bformat%7D?%7Bparameters%7D"&gt;https://api.iconify.design/{prefix}:{icon-name}.{format}?{parameters}&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th style="text-align: left"&gt;部分&lt;/th&gt;
- &lt;th style="text-align: left"&gt;说明&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;&lt;code&gt;api.iconify.design&lt;/code&gt;&lt;/td&gt;
- &lt;td style="text-align: left"&gt;Iconify 官方公共 API 域名&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;&lt;code&gt;{prefix}&lt;/code&gt;&lt;/td&gt;
- &lt;td style="text-align: left"&gt;图标集前缀（如 cil 表示 CoreUI Icons）&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;&lt;code&gt;{icon-name}&lt;/code&gt;&lt;/td&gt;
- &lt;td style="text-align: left"&gt;图标名称（如 dog）&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;&lt;code&gt;{format}&lt;/code&gt;&lt;/td&gt;
- &lt;td style="text-align: left"&gt;输出格式（通常为 svg、json 等）&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;&lt;code&gt;?{parameters}&lt;/code&gt;&lt;/td&gt;
- &lt;td style="text-align: left"&gt;可选的查询参数（如颜色、尺寸等）&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;常用查询参数&lt;/p&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th style="text-align: left"&gt;参数&lt;/th&gt;
- &lt;th style="text-align: left"&gt;示例值&lt;/th&gt;
- &lt;th style="text-align: left"&gt;作用&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;color&lt;/td&gt;
- &lt;td style="text-align: left"&gt;red&lt;br /&gt;%2300ff00&lt;/td&gt;
- &lt;td style="text-align: left"&gt;图标颜色（支持 HEX/RGB/关键词）&lt;br /&gt;%23为#的转义&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;width / height&lt;/td&gt;
- &lt;td style="text-align: left"&gt;24&lt;br /&gt;1.5rem&lt;/td&gt;
- &lt;td style="text-align: left"&gt;尺寸（像素或 CSS 单位）&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;flip&lt;/td&gt;
- &lt;td style="text-align: left"&gt;horizontal&lt;/td&gt;
- &lt;td style="text-align: left"&gt;水平/垂直翻转&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;rotate&lt;/td&gt;
- &lt;td style="text-align: left"&gt;90&lt;/td&gt;
- &lt;td style="text-align: left"&gt;旋转角度（90°/180°/270°）&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td style="text-align: left"&gt;download&lt;/td&gt;
- &lt;td style="text-align: left"&gt;true&lt;/td&gt;
- &lt;td style="text-align: left"&gt;强制下载而非显示&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;颜色值可以是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HEX 格式（需转义 # → %23）：?color=&lt;code&gt;%236a86c8&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;无前缀 HEX 格式：?color=&lt;code&gt;6a86c8&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;颜色名称：?color=&lt;code&gt;blue&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;RGB/A 格式：?color=&lt;code&gt;rgb(106,134,200)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://api.iconify.design/material-symbols:looks-rounded.svg?color=%236a86c8&amp;width=200" 
-style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><title>Markdown 美食食谱写作指南</title><link>https://esperanzaee.github.io/posts/markdown-syntax-guide/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/markdown-syntax-guide/</guid><description>&lt;p&gt;本指南将通过一份&lt;span class="inline-blur"&gt;
+这时候，&lt;strong&gt;我真庆幸自己近视+晚上视线模糊，看得不那么清楚……&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Markdown 美食食谱写作指南</title><link>https://esperanzaee.github.io/posts/markdown-syntax-guide/</link><pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate><guid>https://esperanzaee.github.io/posts/markdown-syntax-guide/</guid><description>&lt;p&gt;本指南将通过一份&lt;span class="inline-blur"&gt;
  美味的意面食谱
 &lt;/span&gt;
 
@@ -412,24 +308,24 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;h2 id="基础语法演示"&gt;基础语法演示&lt;/h2&gt;
 &lt;h3 id="标题级别"&gt;标题级别&lt;/h3&gt;
 &lt;p&gt;在食谱中，我们经常需要不同级别的标题来组织内容。Markdown 提供了六个级别的标题：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;# 经典蒜香培根意面
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;## 食材准备
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;### 主要食材
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;#### 调味料
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;##### 厨房用具
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#030;font-weight:bold"&gt;###### 小贴士
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff0;font-weight:bold"&gt;# 经典蒜香培根意面
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff0;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;## 食材准备
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;### 主要食材
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;#### 调味料
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;##### 厨房用具
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#87ceeb;font-weight:bold"&gt;###### 小贴士
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="文本格式化"&gt;文本格式化&lt;/h3&gt;
 &lt;p&gt;在描述食谱时，我们经常需要强调某些重要的信息：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;重要步骤&lt;/strong&gt;需要加粗
 &lt;em&gt;关键时机&lt;/em&gt;使用斜体
 **&lt;em&gt;特别提示&lt;/em&gt;**同时使用粗体和斜体
 &lt;del&gt;可选步骤&lt;/del&gt;使用删除线&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**重要步骤**需要加粗
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**重要步骤**需要加粗
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;*关键时机*使用斜体
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;**_特别提示_**同时使用粗体和斜体
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;~~可选步骤~~使用删除线
@@ -446,12 +342,12 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;li&gt;蒜末 3-4瓣&lt;/li&gt;
 &lt;li&gt;橄榄油 2汤匙&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;-&lt;/span&gt; 意面 400克
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;-&lt;/span&gt; 培根 200克
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;-&lt;/span&gt; 最好是肥瘦相间的
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;-&lt;/span&gt; 切成小块
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;-&lt;/span&gt; 蒜末 3-4瓣
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;-&lt;/span&gt; 橄榄油 2汤匙
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;-&lt;/span&gt; 意面 400克
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;-&lt;/span&gt; 培根 200克
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f00"&gt;-&lt;/span&gt; 最好是肥瘦相间的
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f00"&gt;-&lt;/span&gt; 切成小块
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;-&lt;/span&gt; 蒜末 3-4瓣
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;-&lt;/span&gt; 橄榄油 2汤匙
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="烹饪步骤有序列表"&gt;烹饪步骤（有序列表）：&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;烧开水，加一小撮盐&lt;/li&gt;
@@ -464,28 +360,12 @@ style="display: block; margin: 0 auto"&gt;&lt;/p&gt;</description></item><item><
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;1.&lt;/span&gt; 烧开水，加一小撮盐
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;2.&lt;/span&gt; 加入意面，煮至八分熟
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#069;font-weight:bold"&gt;3.&lt;/span&gt; 同时，准备酱汁：
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;1.&lt;/span&gt; 锅中热油
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;2.&lt;/span&gt; 炒香蒜末
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#069;font-weight:bold"&gt;3.&lt;/span&gt; 加入培根翻炒
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;1.&lt;/span&gt; 烧开水，加一小撮盐
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;2.&lt;/span&gt; 加入意面，煮至八分熟
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f00"&gt;3.&lt;/span&gt; 同时，准备酱汁：
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f00"&gt;1.&lt;/span&gt; 锅中热油
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f00"&gt;2.&lt;/span&gt; 炒香蒜末
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f00"&gt;3.&lt;/span&gt; 加入培根翻炒
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="块引用"&gt;块引用&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;厨师提示：在开水中加一点橄榄油，可以防止意面粘连。&lt;/p&gt;</description></item><item><title>Test Markdown</title><link>https://esperanzaee.github.io/posts/test-markdown/</link><pubDate>Sun, 01 Jan 2023 10:28:10 +0800</pubDate><guid>https://esperanzaee.github.io/posts/test-markdown/</guid><description>&lt;h1 id="markdown-test-page"&gt;&lt;a name="top"&gt;&lt;/a&gt;Markdown Test Page&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#Headings"&gt;Headings&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Paragraphs"&gt;Paragraphs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Blockquotes"&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Lists"&gt;Lists&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Horizontal"&gt;Horizontal rule&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Table"&gt;Table&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Code"&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Inline"&gt;Inline elements&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id="headings"&gt;&lt;a name="Headings"&gt;&lt;/a&gt;Headings&lt;/h1&gt;
-&lt;h1 id="heading-one"&gt;Heading one&lt;/h1&gt;
-&lt;p&gt;Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt.&lt;/p&gt;
-&lt;h2 id="heading-two"&gt;Heading two&lt;/h2&gt;
-&lt;p&gt;Aute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;厨师提示：在开水中加一点橄榄油，可以防止意面粘连。&lt;/p&gt;</description></item></channel></rss>
