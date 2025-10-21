@@ -88,81 +88,82 @@ jobs:
 第四步：配置 Cloudflare DNS（如果自己有域名的话）
 
 
-登录 Cloudflare，选择或者添加自己的域名"><title>Hugo博客搭建流程</title><link rel=icon type=image/svg+xml href=/favicon.svg><link rel=icon type=image/png sizes=32x32 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-96x96.png><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel="shortcut icon" type=image/x-icon href=/><link rel=stylesheet href=/css/main.2b5adadc9b15c4e44084a5f11469e8994247b0112c8bd636addd7a63667bd34f2fb9024ff12efff4e6274ec16566b85b0230a2f3b25b75625408a86da30ab0c3.css integrity="sha512-K1ra3JsVxORAhKXxFGnomUJHsBEsi9Y2rd16Y2Z7008vuQJP8S7/9OYnTsFlZrhbAjCi87JbdWJUCKhtowqwww=="></head><body a=auto><main class=page-content aria-label=Content><div class=w><div class=cbox><div class=cbox-title-bar><div class=sidebar-links><div class=button><a href=/>小坞</a></div><div class=button><a href=/posts>停泊处</a></div><div class=button><a href=/tool>集坞</a></div><div class=button><a href=/about>关于</a></div></div></div><div class=cinner><article><div class=xian><h1>Hugo博客搭建流程</h1><div class=post-meta><span class=post-date>2025-09-10</span></div></div><h2 id=博客自动化部署到github-pages流程>博客自动化部署到github pages流程</h2><blockquote><p>使用私有仓库A → 构建 Hugo → 部署到公开仓库B(xxxxx.github.io)</p></blockquote><h3 id=第一步创建-personal-access-token-pat>第一步：创建 Personal Access Token (PAT)</h3><p><strong>你需要一个有权限写入目标仓库的 token。</strong></p><p>创建 PAT
-前往：<a href=https://github.com/settings/tokens>https://github.com/settings/tokens</a></p><p>填写</p><ol><li>Token name: deploy-to-xxxxxx.github.io</li><li>Expiration: 选择 90 天或自定义</li><li>Repository access: Only select repositories</li><li>勾选：公开仓库B</li><li>Permissions<br>Repository contents: Read and write</li></ol><p>点击 Generate token，复制生成的 token（形如 ghp_xxx&mldr;）并保存！</p><blockquote><p>关掉页面后就再也看不到了！</p></blockquote><h3 id=第二步在私有仓库添加-secret>第二步：在私有仓库添加 Secret</h3><ol><li>进入私有仓库的 settings → secrets → actions</li><li>点击 New repository secret<table><thead><tr><th>Field</th><th>value</th></tr></thead><tbody><tr><td>Name</td><td>PERSONAL_TOKEN</td></tr><tr><td>value</td><td>粘贴第一步生成的token</td></tr></tbody></table></li></ol><h3 id=第三步配置-ci-文件githubworkflowsciyml>第三步：配置 CI 文件（.github/workflows/ci.yml）</h3><p>在根目录中创建：</p><pre tabindex=0><code>.github/workflows/ci.yml
-</code></pre><p>文件内容如下：</p><pre tabindex=0><code>name: Deploy Hugo Site
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: &#39;latest&#39;
-          extended: true
-
-      - name: Build
-        run: hugo --minify --baseURL &#34;域名&#34;
-
-      - name: Deploy to esperanzaee.github.io
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./public
-          external_repository: 用户名/仓库名
-          publish_branch: main
-          allow_empty_commit: true
-          keep_files: false
-          enable_jekyll: false
-          commit_message: ${{ github.event.head_commit.message }}
-</code></pre><h3 id=第四步配置-cloudflare-dns如果自己有域名的话>第四步：配置 Cloudflare DNS（如果自己有域名的话）</h3><ul><li><p>登录 Cloudflare，选择或者添加自己的域名</p></li><li><p>添加 CNAME 记录（指向 GitHub Pages）</p><table><thead><tr><th>字段</th><th>值</th></tr></thead><tbody><tr><td>Type</td><td>CNAME</td></tr><tr><td>Name</td><td>blog</td></tr><tr><td>Content</td><td>xxxxx.github.io</td></tr><tr><td>Proxy status</td><td>❌ 灰色云（关闭代理）</td></tr><tr><td>TTL</td><td>Auto</td></tr></tbody></table></li><li><p>等待DNS生效（可能5min到48h）</p></li></ul><h3 id=第五步在-github-上绑定自定义域名>第五步：在 GitHub 上绑定自定义域名</h3><ul><li>进入私有仓库的settings → Pages</li><li>设置Custom Domain，输入自己的域名，Save</li></ul><h3 id=第六步提交并触发部署>第六步：提交并触发部署</h3><pre tabindex=0><code>git add .
-git commit -m &#34;feat: setup CI and deploy&#34;
-git push origin main
-</code></pre><h2 id=hugo-子模块主题更新流程>Hugo 子模块主题更新流程</h2><blockquote><p>适用场景：你使用 Git 子模块管理主题，且已 Fork 主题仓库，希望更新并提交变更。</p></blockquote><h3 id=-前提条件仅需执行一次>📌 前提条件（仅需执行一次）</h3><p>如果你是第一次添加该子模块，请在项目根目录执行：</p><pre tabindex=0><code># 添加子模块（仅首次执行）
-git submodule add 目标仓库地址 themes/hugo-binder
-
-# 提交子模块初始化
-git add .gitmodules themes/hugo
-git commit -m &#34;feat: add hugo theme as submodule&#34;
-git push origin main
-</code></pre><blockquote><p>✅ 提示：.gitmodules 文件会记录子模块的 URL 和路径。</p></blockquote><h3 id=日常更新流程当你在-themesxxxx-中修改代码时>日常更新流程（当你在 themes/xxxx 中修改代码时）</h3><ol><li>进入子模块目录，提交并推送主题本身的更改</li></ol><pre tabindex=0><code>cd themes/hugo
-
-确保你在正确的分支（通常是 main 或 master）：
-git checkout main
-
-拉取最新代码（避免冲突）：
-git pull origin main
-
-进行你的修改（如修复配置、样式等），然后提交：
-git add .
-git commit -m &#34;Fix: remove theme = hugo-looseleaf to prevent nesting&#34;
-git push origin main
-</code></pre><blockquote><p>✅ 这一步会把主题的更新推送到你的 Fork 仓库</p></blockquote><ol start=2><li>回到主项目，更新子模块指针</li></ol><pre tabindex=0><code>cd ../../  # 回到 Hugo 项目根目录
-</code></pre><p>此时主项目会显示子模块有“新提交”：</p><pre tabindex=0><code>git status
-# 输出类似：modified:   themes/hugo (new commits)
-</code></pre><p>将子模块的引用更新到最新提交：</p><pre tabindex=0><code>git add themes/hugo
-git commit -m &#34;chore: update submodule hugo to latest commit&#34;
-git push origin main
-</code></pre><blockquote><p>✅ 这一步会触发 GitHub Actions 构建并部署你的博客。</p></blockquote><h3 id=补充建议同步上游主题更新可选>补充建议：同步上游主题更新（可选）</h3><p>如果你希望合并原主题作者的更新（比如修复 bug、新增功能）：</p><pre tabindex=0><code class=language-cd data-lang=cd>git remote -v                  # 查看当前远程仓库
-git remote add upstream 上游仓库地址  # 添加上游仓库（仅一次）
-git fetch upstream             # 获取上游更新
-git merge upstream/main        # 合并到本地
-git push origin main           # 推送到你的 Fork
-cd ../../
-git add themes/hugo
-git commit -m &#34;chore: sync upstream changes for hugo theme&#34;
-git push origin main```
-</code></pre></article><div class=enddiver><img src=/images/end2.gif alt=End...></div></div></div><div class=footer-note>Copyright © 阿翎 All Rights Reserved.</div></div></main><script src=/js/view-image.min.js defer></script><script>document.addEventListener("DOMContentLoaded",function(){const e="article img:not([no-view])";window.ViewImage&&ViewImage.init(e)})</script></body></html>
+登录 Cloudflare，选择或者添加自己的域名"><title>Hugo博客搭建流程</title><link rel=icon type=image/svg+xml href=/favicon.svg><link rel=icon type=image/png sizes=32x32 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-96x96.png><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel="shortcut icon" type=image/x-icon href=/><link rel=stylesheet href=/css/main.e155d380b6b8397901a253ee4b705dca44ce1d56a6d8c634db31244f47077f5fbb5306b9cfe9017714c95cf20d55aeba3c85f07e8655cbd4beb06e4e30492e69.css integrity="sha512-4VXTgLa4OXkBolPuS3BdykTOHVam2MY02zEkT0cHf1+7Uwa5z+kBdxTJXPINVa66PIXwfoZVy9S+sG5OMEkuaQ=="></head><body a=auto><main class=page-content aria-label=Content><div class=w><div class=cbox><div class=cbox-title-bar><div class=sidebar-links><div class=button><a href=/>小坞</a></div><div class=button><a href=/posts>停泊处</a></div><div class=button><a href=/tool>集坞</a></div><div class=button><a href=/about>关于</a></div></div></div><div class=cinner><article><div class=xian><h1>Hugo博客搭建流程</h1><div class=post-meta><span class=post-date>2025-09-10</span></div></div><h2 id=博客自动化部署到github-pages流程>博客自动化部署到github pages流程</h2><blockquote><p>使用私有仓库A → 构建 Hugo → 部署到公开仓库B(xxxxx.github.io)</p></blockquote><h3 id=第一步创建-personal-access-token-pat>第一步：创建 Personal Access Token (PAT)</h3><p><strong>你需要一个有权限写入目标仓库的 token。</strong></p><p>创建 PAT
+前往：<a href=https://github.com/settings/tokens>https://github.com/settings/tokens</a></p><p>填写</p><ol><li>Token name: deploy-to-xxxxxx.github.io</li><li>Expiration: 选择 90 天或自定义</li><li>Repository access: Only select repositories</li><li>勾选：公开仓库B</li><li>Permissions<br>Repository contents: Read and write</li></ol><p>点击 Generate token，复制生成的 token（形如 ghp_xxx&mldr;）并保存！</p><blockquote><p>关掉页面后就再也看不到了！</p></blockquote><h3 id=第二步在私有仓库添加-secret>第二步：在私有仓库添加 Secret</h3><ol><li>进入私有仓库的 settings → secrets → actions</li><li>点击 New repository secret<table><thead><tr><th>Field</th><th>value</th></tr></thead><tbody><tr><td>Name</td><td>PERSONAL_TOKEN</td></tr><tr><td>value</td><td>粘贴第一步生成的token</td></tr></tbody></table></li></ol><h3 id=第三步配置-ci-文件githubworkflowsciyml>第三步：配置 CI 文件（.github/workflows/ci.yml）</h3><p>在根目录中创建：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>.github/workflows/ci.yml
+</span></span></code></pre></div><p>文件内容如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>name: Deploy Hugo Site
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>on:
+</span></span><span style=display:flex><span>  push:
+</span></span><span style=display:flex><span>    branches:
+</span></span><span style=display:flex><span>      - main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>jobs:
+</span></span><span style=display:flex><span>  deploy:
+</span></span><span style=display:flex><span>    runs-on: ubuntu-latest
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    steps:
+</span></span><span style=display:flex><span>      - name: Checkout source
+</span></span><span style=display:flex><span>        uses: actions/checkout@v4
+</span></span><span style=display:flex><span>        with:
+</span></span><span style=display:flex><span>          submodules: true
+</span></span><span style=display:flex><span>          fetch-depth: 0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - name: Setup Hugo
+</span></span><span style=display:flex><span>        uses: peaceiris/actions-hugo@v2
+</span></span><span style=display:flex><span>        with:
+</span></span><span style=display:flex><span>          hugo-version: &#39;latest&#39;
+</span></span><span style=display:flex><span>          extended: true
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - name: Build
+</span></span><span style=display:flex><span>        run: hugo --minify --baseURL &#34;域名&#34;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      - name: Deploy to esperanzaee.github.io
+</span></span><span style=display:flex><span>        uses: peaceiris/actions-gh-pages@v3
+</span></span><span style=display:flex><span>        with:
+</span></span><span style=display:flex><span>          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+</span></span><span style=display:flex><span>          publish_dir: ./public
+</span></span><span style=display:flex><span>          external_repository: 用户名/仓库名
+</span></span><span style=display:flex><span>          publish_branch: main
+</span></span><span style=display:flex><span>          allow_empty_commit: true
+</span></span><span style=display:flex><span>          keep_files: false
+</span></span><span style=display:flex><span>          enable_jekyll: false
+</span></span><span style=display:flex><span>          commit_message: ${{ github.event.head_commit.message }}
+</span></span></code></pre></div><h3 id=第四步配置-cloudflare-dns如果自己有域名的话>第四步：配置 Cloudflare DNS（如果自己有域名的话）</h3><ul><li><p>登录 Cloudflare，选择或者添加自己的域名</p></li><li><p>添加 CNAME 记录（指向 GitHub Pages）</p><table><thead><tr><th>字段</th><th>值</th></tr></thead><tbody><tr><td>Type</td><td>CNAME</td></tr><tr><td>Name</td><td>blog</td></tr><tr><td>Content</td><td>xxxxx.github.io</td></tr><tr><td>Proxy status</td><td>❌ 灰色云（关闭代理）</td></tr><tr><td>TTL</td><td>Auto</td></tr></tbody></table></li><li><p>等待DNS生效（可能5min到48h）</p></li></ul><h3 id=第五步在-github-上绑定自定义域名>第五步：在 GitHub 上绑定自定义域名</h3><ul><li>进入私有仓库的settings → Pages</li><li>设置Custom Domain，输入自己的域名，Save</li></ul><h3 id=第六步提交并触发部署>第六步：提交并触发部署</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>git add .
+</span></span><span style=display:flex><span>git commit -m &#34;feat: setup CI and deploy&#34;
+</span></span><span style=display:flex><span>git push origin main
+</span></span></code></pre></div><h2 id=hugo-子模块主题更新流程>Hugo 子模块主题更新流程</h2><blockquote><p>适用场景：你使用 Git 子模块管理主题，且已 Fork 主题仓库，希望更新并提交变更。</p></blockquote><h3 id=-前提条件仅需执行一次>📌 前提条件（仅需执行一次）</h3><p>如果你是第一次添加该子模块，请在项目根目录执行：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span># 添加子模块（仅首次执行）
+</span></span><span style=display:flex><span>git submodule add 目标仓库地址 themes/hugo-binder
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># 提交子模块初始化
+</span></span><span style=display:flex><span>git add .gitmodules themes/hugo
+</span></span><span style=display:flex><span>git commit -m &#34;feat: add hugo theme as submodule&#34;
+</span></span><span style=display:flex><span>git push origin main
+</span></span></code></pre></div><blockquote><p>✅ 提示：.gitmodules 文件会记录子模块的 URL 和路径。</p></blockquote><h3 id=日常更新流程当你在-themesxxxx-中修改代码时>日常更新流程（当你在 themes/xxxx 中修改代码时）</h3><ol><li>进入子模块目录，提交并推送主题本身的更改</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>cd themes/hugo
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>确保你在正确的分支（通常是 main 或 master）：
+</span></span><span style=display:flex><span>git checkout main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>拉取最新代码（避免冲突）：
+</span></span><span style=display:flex><span>git pull origin main
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>进行你的修改（如修复配置、样式等），然后提交：
+</span></span><span style=display:flex><span>git add .
+</span></span><span style=display:flex><span>git commit -m &#34;Fix: remove theme = hugo-looseleaf to prevent nesting&#34;
+</span></span><span style=display:flex><span>git push origin main
+</span></span></code></pre></div><blockquote><p>✅ 这一步会把主题的更新推送到你的 Fork 仓库</p></blockquote><ol start=2><li>回到主项目，更新子模块指针</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>cd ../../  # 回到 Hugo 项目根目录
+</span></span></code></pre></div><p>此时主项目会显示子模块有“新提交”：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>git status
+</span></span><span style=display:flex><span># 输出类似：modified:   themes/hugo (new commits)
+</span></span></code></pre></div><p>将子模块的引用更新到最新提交：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>git add themes/hugo
+</span></span><span style=display:flex><span>git commit -m &#34;chore: update submodule hugo to latest commit&#34;
+</span></span><span style=display:flex><span>git push origin main
+</span></span></code></pre></div><blockquote><p>✅ 这一步会触发 GitHub Actions 构建并部署你的博客。</p></blockquote><h3 id=补充建议同步上游主题更新可选>补充建议：同步上游主题更新（可选）</h3><p>如果你希望合并原主题作者的更新（比如修复 bug、新增功能）：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>git remote -v                  # 查看当前远程仓库
+</span></span><span style=display:flex><span>git remote add upstream 上游仓库地址  # 添加上游仓库（仅一次）
+</span></span><span style=display:flex><span>git fetch upstream             # 获取上游更新
+</span></span><span style=display:flex><span>git merge upstream/main        # 合并到本地
+</span></span><span style=display:flex><span>git push origin main           # 推送到你的 Fork
+</span></span><span style=display:flex><span>cd ../../
+</span></span><span style=display:flex><span>git add themes/hugo
+</span></span><span style=display:flex><span>git commit -m &#34;chore: sync upstream changes for hugo theme&#34;
+</span></span><span style=display:flex><span>git push origin main```
+</span></span></code></pre></div></article><div class=enddiver><img src=/images/end2.gif alt=End...></div><div class=pagination><a href=https://esperanzaee.github.io/posts/cry/ class=prev>← 。゜゜(´Ｏ`) ゜゜。
+</a><a href=https://esperanzaee.github.io/posts/2025-09-26-zaji/ class=next>生活补丁集 No.1 →</a></div></div></div><div class=footer-note>Copyright © 阿翎 All Rights Reserved.</div></div></main><script src=/js/view-image.min.js defer></script><script>document.addEventListener("DOMContentLoaded",function(){const e=".w img:not([no-view])";window.ViewImage&&ViewImage.init(e)})</script></body></html>
